@@ -2,13 +2,79 @@
 <div style="margin: 0 0 15px 0">
 	<a href="#/recipes" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Go Back</a>
 </div>
-<div class="col-md-4">
-	<div class="row">
-		<img class="img-full img-responsive" src="img/recipe/{{mainImage}}">
-		<div ng-repeat="image in recipe.images | limitTo:4">
-			<div class="col-sm-6 col-md-3">
-				<img class="img-responsive img-portfolio" ng-src="img/portfolio/{{image.name}}" ng-click="setImage(image)">
+<div class="row">
+	<div class="col-md-4">
+			<img class="img-full img-responsive" src="img/recipes/{{mainImage}}">
+			<div ng-repeat="image in recipe.images | limitTo:4">
+				<div class="col-sm-6 col-md-3">
+					<img class="img-responsive img-portfolio" ng-src="img/recipe/{{image.name}}" ng-click="setImage(image)">
+				</div>
+			</div>
+	</div>
+
+	<div class="col-md-8">
+		<div class="panel panel-default">
+	        <div class="panel-body">
+	        	<div class="portfolio-caption"> <p> portfolio-caption</p>
+				<h1 class="text-center">{{recipe.name}}</h1>
+				<p>{{recipe.description}}</p>
+				<p>Cost: ${{recipe.price}}</p>
+				<p>Theme: {{recipe.theme}}</p>
+				<p>Posted on {{recipe.posted}}</p>
+				<p>Calories: {{recipe.calories}}</p>
+				
+				<ul>
+					<h3>Ingredients</h3>
+					<li ng-repeat="ingredient in recipe.ingredients">{{ingredient}}</li>
+				</ul>
+
+				<ol>
+					<h3>Directions</h3>
+					<li ng-repeat="direction in recipe.directions">{{direction}}</li>
+				</ol>
+				</div>
 			</div>
 		</div>
+
+
+		<a href="#/recipes" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Go Back</a>
+		
+		<p>This is a test HTML file.</p>
+
+
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<!--<input type="hidden" name="hosted_button_id" value="Z6UQTWAYJ2JLE">--> 
+		
+		<!-- dontgizeup-facilitator@yahoo.com-->
+		<!--<input type="hidden" name="hosted_button_id" value="XN27NS8Y9VYJQ">-->
+		<!-- dontgizeup@sandbox.com   .....   Katie J Bowtique-->
+		<!--<input type="hidden" name="hosted_button_id" value="GQFWXWEJWUYP4">-->
+		<!-- dontgizeup@yahoo.com-->
+		<input type="hidden" name="hosted_button_id" value="Z6UQTWAYJ2JLE">
+		
+		<input type='hidden' name="business" value="dontgizeup@yahoo.com">
+		<!-- Item Name -->
+		<input type='hidden' name="item_name" value="{{portfolio.name}}">
+		<!-- Item ID -->
+		<input type='hidden' name="item_number" value="{{portfolio.id}}">
+		<!-- Item Price -->
+		<input type='hidden' name="amount" value="{{portfolio.price}}">
+		<!-- Currency Code -->
+		<input type='hidden' name="currency_code" value="USD">
+		<!-- Return method -->
+		<input type='hidden' name="rm" value="2">
+		<!-- Return URL -->
+		<input type='hidden' name="return" value="https://filter-by-portfolio-portfolioid-ironheartbj18.c9.io/?_c9_id=livepreview0&_c9_host=https://ide.c9.io#/portfolio/{{portfolio.id}}">
+		
+		<!-- Cancel Return URL -->
+		<input type='hidden' name="cancel_return" value="https://filter-by-portfolio-portfolioid-ironheartbj18.c9.io/?_c9_id=livepreview0&_c9_host=https://ide.c9.io#/portfolio/{{portfolio.id}}">
+		
+		<!-- Button -->
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+
 	</div>
+
 </div>

@@ -53,14 +53,6 @@ app.config(['$routeProvider', function($routeProvider) {
 
 }]);
 
-// app.filter('pagination', function() {
-// 	return function(input, start) {
-//   		start = +start;
-//   		return input.slice(start);
-//   	};
-// });
-
-
 // app.controller("mainController", function($scope, $location){
 // 	$scope.message = "this is main page";
 // 	$scope.isActive = function(route) {
@@ -104,34 +96,14 @@ function OtherController($scope) {
 }
 
 app.controller('OtherController', OtherController);
-// app.controller("portfolioController", ['$scope', '$http', '$log', function($scope, $http, $log){
-// 	$http.get('json/portfolio.json').success(function(data){
-// 		$scope.portfolios = data;
-// 		$scope.currentPage = 0;
-// 		$scope.pageSize = 3;
-
-// 		$scope.numberOfPages = function() {
-// 			return Math.ceil($scope.portfolios.length / $scope.pageSize);
-// 		};
-// 	});
-
-// 	$scope.setPage = function (pageNo) {
-//     $scope.currentPage = pageNo;
-//   	};
-
-// 	$scope.pageChanged = function() {
-// 	   $log.log('Page changed to: ' + $scope.currentPage);
-// 	}; 
-// }]);
-
 
 app.controller('recipeDetailsCtrl',  ['$scope', '$routeParams', '$http', '$filter', function($scope, $routeParams, $http, $filter){
 	var recipeId = $routeParams.recipeId;
-	$http.get('json/portfolio.json').success(function(data){
-			$scope.portfolio = $filter('filter')(data, function(d){
-				return d.id == portfolioId;
+	$http.get('json/recipes.json').success(function(data){
+			$scope.recipe = $filter('filter')(data, function(d){
+				return d.id == recipeId;
 			})[0];
-			$scope.mainImage = $scope.portfolio.images[0].name;
+			$scope.mainImage = $scope.recipe.images[0].name;
 	});
 
 	$scope.setImage = function(image){
