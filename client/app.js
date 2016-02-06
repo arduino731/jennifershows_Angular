@@ -5,7 +5,8 @@ var app = angular.module('myApp', [
 	'ngRoute', 
 	'angularUtils.directives.dirPagination',
 	// 'ui.bootstrap',
-	'JennifershowsApp.services'
+	'JennifershowsApp.services',
+	'Youtube'
 	// 'JenniferShows.controller'
 	]);
 
@@ -104,6 +105,8 @@ app.controller('recipeDetailsCtrl',  ['$scope', '$routeParams', '$http', '$filte
 				return d.id == recipeId;
 			})[0];
 			$scope.mainImage = $scope.recipe.images[0].name;
+			$scope.code = $scope.recipe.youtube;
+			console.log($scope.code);
 	});
 
 	$scope.setImage = function(image){
