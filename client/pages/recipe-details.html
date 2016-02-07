@@ -15,25 +15,28 @@
 	<div class="col-md-8">
 		<div class="panel panel-default">
 	        <div class="panel-body">
-	        	<div class="portfolio-caption"> <p> portfolio-caption</p>
-				<h1 class="text-center">{{recipe.name}}</h1>
-				<p>{{recipe.description}}</p>
-				<p>Cost: ${{recipe.price}}</p>
-				<p>Theme: {{recipe.theme}}</p>
-				<p>Posted on {{recipe.posted}}</p>
-				<p>Calories: {{recipe.calories}}</p>
-				
-				<ul>
-					<h3>Ingredients</h3>
-					<li ng-repeat="ingredient in recipe.ingredients">{{ingredient}}</li>
-				</ul>
-				<div>
-					<div my-youtube code="code"></div>
-				</div>
-				<ol>
-					<h3>Directions</h3>
-					<li ng-repeat="direction in recipe.directions">{{direction}}</li>
-				</ol>
+	        	<div style="padding:25px; background-color:white;">
+					<h1 class="text-center">{{recipe.name}}</h1>
+					<div class="row">
+						<p style="padding:10px; float:left;"><b>YIELD:</b> {{recipe.yield}} |</p>
+						<p style="padding:10px; float:left;"><b>CALORIES:</b> {{recipe.calories}} |</p>
+						<p style="padding:10px; float:left;"><b>THEME:</b> {{recipe.theme}} </p>
+						<!-- RATING: {{}}THIS RECIPE HAS NOT BEEN RATED -->
+					</div>
+					<p>Posted on {{recipe.posted}}</p>
+					
+					<p>{{recipe.description}}</p>
+					<ul>
+						<h3 class="text-center">Ingredients</h3>
+						<li ng-repeat="ingredient in recipe.ingredients">{{ingredient}}</li>
+					</ul>
+					<div>
+						<div my-youtube code="code"></div>
+					</div>
+					<ol>
+						<h3 class="text-center">Directions</h3>
+						<li ng-repeat="direction in recipe.directions" class="text-muted">{{direction}}</li>
+					</ol>
 				</div>
 			</div>
 		</div>
