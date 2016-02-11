@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jennifer's shows about the DEAF education community">
+    <meta name="author" content="Brian van Vlymen">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+    
+
+    <title>Jennifer's Shows</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "c29d063c-4086-44e5-8cc1-28dcfb112b47", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+</head>
+
+<body ng-controller="indexController">
+<div class="text-center">
+    <p style="color:white;">Share this:</p>
+    <span class='st_sharethis_large' displayText='ShareThis'></span>
+    <span class='st_facebook_large' displayText='Facebook'></span>
+    <span class='st_twitter_large' displayText='Tweet'></span> 
+    <span class='st_googleplus_large' displayText='Google +'></span>
+    <span class='st_email_large' displayText='Email'></span>
+</div>
+
+    <div class="brand">Business Casual</div>
+    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Jennifer's Shows</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li ng-class="{ active:isActive('/')}">
+                        <a href="#/">Home</a>
+                        <!-- <a href="index.html">Home</a> -->
+                    </li>
+                    <li ng-class="{ active:isActive('/recipes')}">
+                        <a href="#/recipes">Recipes</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li ng-class="{active:isActive('/contact')}" >
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <div class="dropdown" style="float: left;margin-top: 24px;">
+                        <button class="btn btn-lg btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Topics
+                        </button>
+                        <span class="caret"></span>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Business News</a></li>
+                        <li><a href="#">Workout Tips</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Healths</a></li>
+                      </ul>
+                    </div>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="text-center">
+        <p> dontate here</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="VUXNGGA3TUG4C">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+    </div>
+    
+    <div class="container">
+        <!-- https://support.google.com/adsense/answer/48182 -->
+        <div ng-view></div>
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="margin-bottom:50px;">
+                    <p>Copyright Jennifershows.com &copy; Your Website 2016</p>
+                    <!-- Go to www.addthis.com/dashboard to generate a new set of sharing buttons -->
+                    <a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/facebook.png" border="0" alt="Facebook"/></a>
+                    <a href="https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/google_plusone_share.png" border="0" alt="Google+"/></a>
+                    <a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/twitter.png" border="0" alt="Twitter"/></a>
+                    <a href="https://www.addthis.com/bookmark.php?source=tbx32nj-1.0&v=300&url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/addthis.png" border="0" alt="Addthis"/></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ac194d57cdf297" async="async"></script>
+
+<!-- angular libraby 1.4.9 version-->
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<!-- angualr ui bootstrap  -->
+<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<!-- angular-utils-pagination -->
+<script type="text/javascript" src="bower_components/angularUtils-pagination/dirPagination.js"></script>
+<!-- angular ngRoute -->
+<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+
+<script type="text/javascript" src="app/app.js"></script>
+
+<!-- <script type="text/javascript" src="js/controllers/controllers.js"></script> -->
+
+<!-- services -->
+<script type="text/javascript" src="app/services/service.js"></script>
+
+<!-- directives -->
+<script type="text/javascript" src="app/directives/directives.js"></script>
+
+
+</body>
+
+</html>

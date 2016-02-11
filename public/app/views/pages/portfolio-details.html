@@ -1,0 +1,76 @@
+<div class="container">
+<!-- <div class="container-fluid"> -->
+
+	<div class="top">
+		<div style="margin: 0 0 15px 0">
+			<a href="#/portfolio" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Go Back</a>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-full img-responsive" src="img/portfolio/{{mainImage}}">
+				<div ng-repeat="image in portfolio.images | limitTo:4">
+					<div class="col-sm-6 col-md-3">
+						<img class="img-responsive img-portfolio" ng-src="img/portfolio/{{image.name}}" ng-click="setImage(image)">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<h3>{{portfolio.name}}</h3>
+				<p>{{portfolio.description}}</p>
+				<p>Cost: ${{portfolio.price}}</p>
+				
+				<a href="#/portfolio" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Go Back</a>
+				
+				<p>This is a test HTML file.</p>
+
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<!--<input type="hidden" name="hosted_button_id" value="Z6UQTWAYJ2JLE">--> 
+				
+				<!-- dontgizeup-facilitator@yahoo.com-->
+				<!--<input type="hidden" name="hosted_button_id" value="XN27NS8Y9VYJQ">-->
+				<!-- dontgizeup@sandbox.com   .....   Katie J Bowtique-->
+				<!--<input type="hidden" name="hosted_button_id" value="GQFWXWEJWUYP4">-->
+				<!-- dontgizeup@yahoo.com-->
+				<input type="hidden" name="hosted_button_id" value="Z6UQTWAYJ2JLE">
+				
+				<input type='hidden' name="business" value="dontgizeup@yahoo.com">
+				<!-- Item Name -->
+				<input type='hidden' name="item_name" value="{{portfolio.name}}">
+				<!-- Item ID -->
+				<input type='hidden' name="item_number" value="{{portfolio.id}}">
+				<!-- Item Price -->
+				<input type='hidden' name="amount" value="{{portfolio.price}}">
+				<!-- Currency Code -->
+				<input type='hidden' name="currency_code" value="USD">
+				<!-- Return method -->
+				<input type='hidden' name="rm" value="2">
+				<!-- Return URL -->
+				<input type='hidden' name="return" value="https://filter-by-portfolio-portfolioid-ironheartbj18.c9.io/?_c9_id=livepreview0&_c9_host=https://ide.c9.io#/portfolio/{{portfolio.id}}">
+				
+				<!-- Cancel Return URL -->
+				<input type='hidden' name="cancel_return" value="https://filter-by-portfolio-portfolioid-ironheartbj18.c9.io/?_c9_id=livepreview0&_c9_host=https://ide.c9.io#/portfolio/{{portfolio.id}}">
+				
+				<!-- Button -->
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+
+			</div>
+		
+			<div class="col-md-12 text-center">
+				
+				<p> dontate here</p>
+				
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="VUXNGGA3TUG4C">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+
+
+			</div>
+		</div>	
+	</div>
+</div>
