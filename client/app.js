@@ -70,6 +70,8 @@ app.controller("indexController", function($scope, $location){
 });
 
 app.controller("recipesController", ['$scope', '$http', '$log', 'ergastAPIservice', function($scope, $http, $log, ergastAPIservice){
+	//$scope.recipes = []; // declare an empty array 
+	
 	// delete ergastAPIservice module 
 	// ergastAPIservice.getRecipes().success(function(response){ 
 	// 	$scope.portfolios = response;
@@ -100,6 +102,7 @@ app.controller('OtherController', OtherController);
 
 app.controller('recipeDetailsCtrl',  ['$scope', '$routeParams', '$http', '$filter', function($scope, $routeParams, $http, $filter){
 	var recipeId = $routeParams.recipeId;
+	//$scope.recipe = []; //declare an empty array
 	$http.get('json/recipes.json').success(function(data){
 			$scope.recipe = $filter('filter')(data, function(d){
 				return d.id == recipeId;
