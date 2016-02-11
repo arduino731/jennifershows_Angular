@@ -12,10 +12,6 @@ var app = angular.module('myApp', [
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
-  	//   .when('/', {
-	  // 	controller: "mainController",
-	  // 	templateUrl: "pages/main.html"
-	  // })
   	  .when('/', {
 	  	controller: "indexController",
 	  	templateUrl: "app/views/pages/index.html"
@@ -28,21 +24,13 @@ app.config(['$routeProvider', function($routeProvider) {
 	  	controller: "recipeDetailsCtrl",
 	  	templateUrl: "app/views/pages/recipe-details.html",
 	  })
-	  // .when('/portfolio', {
-	  // 	controller: "portfolioController",
-	  // 	templateUrl: "pages/portfolio.html"
-	  // })
-	 //  .when('/portfolio/:portfolioId', {
-		// controller: 'portfolioDetailsCtrl',
-		// templateUrl: 'pages/portfolio-details.html',
-		// })
 	  .when('/about', {
 	  	controller: "aboutController",
 	  	templateUrl: "app/views/pages/about.html"
 	  })
-	  .when('/team', {
-	  	controller: "teamController",
-	  	templateUrl: "app/views/pages/team.html"
+	  .when('/blog', {
+	  	controller: "blogController",
+	  	templateUrl: "app/views/pages/blog.html"
 	  })
 	  .when('/contact', {
 	  	controller: "contactController",
@@ -53,14 +41,6 @@ app.config(['$routeProvider', function($routeProvider) {
 	  });
 
 }]);
-
-// app.controller("mainController", function($scope, $location){
-// 	$scope.message = "this is main page";
-// 	$scope.isActive = function(route) {
-//         return route === $location.path();
-//     }
-// });
-
 
 app.controller("indexController", function($scope, $location){
 	$scope.message = "this is index page";
@@ -117,27 +97,12 @@ app.controller('recipeDetailsCtrl',  ['$scope', '$routeParams', '$http', '$filte
 	}
 }]);
 
-// app.controller('portfolioDetailsCtrl',  ['$scope', '$routeParams', '$http', '$filter', function($scope, $routeParams, $http, $filter){
-// 	var portfolioId = $routeParams.portfolioId;
-// 	$http.get('json/portfolio.json').success(function(data){
-// 			$scope.portfolio = $filter('filter')(data, function(d){
-// 				return d.id == portfolioId;
-// 			})[0];
-// 			$scope.mainImage = $scope.portfolio.images[0].name;
-// 	});
-
-// 	$scope.setImage = function(image){
-// 		$scope.mainImage = image.name; 
-// 	}
-// }]);
-
-
 app.controller("aboutController", function($scope){
 	
 });
 
-app.controller("teamController", function($scope){
-	$scope.message = "team page!"; 
+app.controller("blogController", function($scope){
+	$scope.message = "Blog Page";
 });
 
 app.controller("contactController", function($scope){
