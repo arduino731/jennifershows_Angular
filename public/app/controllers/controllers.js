@@ -5,6 +5,46 @@ app.controller("indexController", function($scope, $location){
 	$scope.isActive = function(route) {
         return route === $location.path();
     }
+
+  $scope.myInterval = 3000;
+  $scope.noWrapSlides = false;
+  var slides = $scope.slides = [];
+  var currIndex = 0; 
+
+    $scope.addSlide = function() {
+    slides.push({
+      image:[ 'assets/img/port/port01.jpg', 'assets/img/port/port02.jpg', 'assets/img/port/port03.jpg'][slides.length % 3],
+      text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+      id: currIndex++
+    });
+  };
+
+// $scope.addSlide = function(){
+//   slides.push(
+//     {
+//       image: 'http://lorempixel.com/400/200/',
+//       text: "Nice image"
+//     },
+//     {
+//       image: 'http://lorempixel.com/400/200/food',
+//       text: "Awesome photograph"
+//     },
+//     {
+//       image: 'http://lorempixel.com/400/200/sports',
+//       text: "That is so cool"
+//     },
+//     {
+//       image: 'http://lorempixel.com/400/200/people',
+//       text: "I love that"
+//     }
+//   );
+
+// };
+
+  for (var i = 0; i < 4; i++) {
+    $scope.addSlide();
+  }
+
 });
 
 app.controller("recipesController", ['$scope', '$http', '$log', 'ergastAPIservice', function($scope, $http, $log, ergastAPIservice){

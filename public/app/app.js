@@ -4,7 +4,7 @@
 var app = angular.module('myApp', [
 	'app.routes', 
 	'angularUtils.directives.dirPagination',
-	// 'ui.bootstrap',
+	'ui.bootstrap',
 	'JennifershowsApp.services',
 	'Youtube',
 	'JenniferShows.controller'

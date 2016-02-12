@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
-
 <head>
 
     <meta charset="utf-8">
@@ -13,7 +12,6 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico">
     <!-- font awesome -->
     <link rel="stylesheet" type="text/css" href="assets/bower_components/font-awesome/css/font-awesome.min.css">
-    
 
     <title>Jennifer's Shows</title>
 
@@ -21,7 +19,7 @@
     <base href="/">
 
     <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="assets/css/business-casual.css" rel="stylesheet">
@@ -42,23 +40,11 @@
 </head>
 
 <body ng-controller="indexController">
-<div class="text-center">
-    <p style="color:white;">Share this:</p>
-    <span class='st_sharethis_large' displayText='ShareThis'></span>
-    <span class='st_facebook_large' displayText='Facebook'></span>
-    <span class='st_twitter_large' displayText='Tweet'></span> 
-    <span class='st_googleplus_large' displayText='Google +'></span>
-    <span class='st_email_large' displayText='Email'></span>
-</div>
-
-    <div class="brand">Business Casual</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
-
-
-
+    <!-- <div class="brand">Business Casual</div> -->
+    <!-- <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div> -->
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-inverse" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -69,12 +55,17 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Jennifer's Shows</a>
+                <a class="navbar-brand pull-left" href="/">
+                    <img style="max-width:100px; margin-top: -7px;" src="http://placehold.it/150x50&text=Logo" alt="">
+                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
 
             
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <a class="navbar-brand" href="/">here
+                <img src="http://placehold.it/150x50&text=Logo" alt="">
+            </a>
                 <ul class="nav navbar-nav">
                     <li ng-class="{ active:isActive('/')}">
                         <a href="/">Home</a>
@@ -110,6 +101,27 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    <div class="text-center">
+        <h2 class="brand-before">
+        <small>Welcome to</small>
+        </h2>
+        <h1 class="brand-name">Jennifer's Shows</h1>
+        <hr class="tagline-divider">
+        <h2>
+            <small>By
+                <strong>Brian van Vlymen</strong>
+            </small>
+        </h2>
+
+        <p>move to right navbar </p>
+        <p style="color:white;">Share this:</p>
+        <span class='st_sharethis_large' displayText='ShareThis'></span>
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_twitter_large' displayText='Tweet'></span> 
+        <span class='st_googleplus_large' displayText='Google +'></span>
+        <span class='st_email_large' displayText='Email'></span>
+    </div>
 
     <div class="text-center">
         <p> dontate here</p>
