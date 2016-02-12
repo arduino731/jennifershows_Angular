@@ -24,7 +24,7 @@
         <div class="panel-body">
             <div dir-paginate="recipe in recipes | filter:q | itemsPerPage: pageSize" current-page="currentPage">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#/recipes/{{recipe.id}}" class="portfolio-link" >
+                    <a href="/recipes/{{recipe.id}}" class="portfolio-link" >
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -42,24 +42,6 @@
         </div>
     </div>
 </div>
-    
-  
-        <<!-- div ng-repeat="recipe in recipes | filter: searchText" ng-click="pageChanged()">          
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#/recipes/{{recipe.id}}" class="portfolio-link" >
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img ng-src="img/portfolio/{{portfolio.images[0].name}}" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>{{recipe.name}}</h4>
-                    <p class="text-muted">{{recipe.description}}}</p>
-                </div>
-            </div> 
-        </div> -->
 
 <div ng-controller="OtherController" class="other-controller">
     <small>this is in "OtherController"</small>

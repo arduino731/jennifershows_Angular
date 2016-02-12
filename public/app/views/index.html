@@ -17,6 +17,9 @@
 
     <title>Jennifer's Shows</title>
 
+    <!-- FOR ANGULAR ROUTING -->
+    <base href="/">
+
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -74,20 +77,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li ng-class="{ active:isActive('/')}">
-                        <a href="#/">Home</a>
-                        <!-- <a href="index.html">Home</a> -->
+                        <a href="/">Home</a>
                     </li>
                     <li ng-class="{ active:isActive('/recipes')}">
-                        <a href="#/recipes">Recipes</a>
+                        <a href="/recipes">Recipes</a>
                     </li>
                     <li ng-class="{ active:isActive('/about')}">
-                        <a href="#/about">About</a>
+                        <a href="/about">About</a>
                     </li>
                     <li ng-class="{ active:isActive('/blog')}">
-                        <a href="#/blog">Blog</a>
+                        <a href="/blog">Blog</a>
                     </li>
                     <li ng-class="{active:isActive('/contact')}" >
-                        <a href="#/contact">Contact</a>
+                        <a href="/contact">Contact</a>
                     </li>
                     <div class="dropdown" style="float: left;margin-top: 24px;">
                         <button class="btn btn-lg btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -156,8 +158,9 @@
 <script type="text/javascript" src="assets/bower_components/angular-route/angular-route.min.js"></script>
 
 <script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/app.routes.js"></script>
 
-<!-- <script type="text/javascript" src="js/controllers/controllers.js"></script> -->
+<script type="text/javascript" src="app/controllers/controllers.js"></script>
 
 <!-- services -->
 <script type="text/javascript" src="app/services/service.js"></script>
