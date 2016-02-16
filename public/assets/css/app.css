@@ -3,14 +3,12 @@
 	height:100%;
 }
 
-.navbar-collapse {
-	background-color: black;
-}
 
 .pagination > li > .pagebutton { 
 	float:none;
 	top: 2px;
 }
+
 
 /* Extra small devices (phones, less than 768px) */
 @media only screen and (min-width: 0) {
