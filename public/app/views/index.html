@@ -42,22 +42,22 @@
 <body ng-controller="indexController">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <div class="btn-group" uib-dropdown style="">
-                  <div id="single-button" type="button" class="navbar-toggle" uib-dropdown-toggle ng-disabled="disabled">
-                       <span class="sr-only">Toggle navigation</span>
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
-                  </div>
-                  <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li class="divider"></li>
-                    <li role="menuitem"><a href="#">Separated link</a></li>
-                  </ul>
+                    <div id="single-button" type="button" class="navbar-toggle" uib-dropdown-toggle ng-disabled="disabled">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                    <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li class="divider"></li>
+                        <li role="menuitem"><a href="#">Separated link</a></li>
+                    </ul>
                 </div>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
                 <a class="navbar-brand" href="/">Jennifer's Shows</a>
@@ -70,25 +70,22 @@
                     <li ng-class="{ active:isActive('/about')}"><a href="/about">About</a></li>
                     <li ng-class="{ active:isActive('/blog')}"><a href="/blog">Blog</a></li>
                     <li ng-class="{ active:isActive('/contact')}"><a href="/contact">Contact</a></li>
-                    
-                    
                     <div class="btn-group nav-topics" uib-dropdown>
-                      <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle ng-disabled="disabled">Topics <span class="caret"></span></button>
-                      <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li class="divider"></li>
-                        <li role="menuitem"><a href="#">Separated link</a></li>
-                      </ul>
+                        <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle ng-disabled="disabled">Topics <span class="caret"></span></button>
+                        <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li class="divider"></li>
+                            <li role="menuitem"><a href="#">Separated link</a></li>
+                        </ul>
                     </div>
                 </ul>
-
-                 <!-- </span> -->
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
+    <!-- End Nav -->
     
     <div class="brand">Jennifer's Shows</div>
     

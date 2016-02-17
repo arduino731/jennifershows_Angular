@@ -37,6 +37,12 @@
 	/*}*/
 	.btn-group {
 		float: left;
+		position: relative;
+	}
+	.dropdown-menu {
+		min-width: 190px;
+		left: auto;
+		right:0;
 	}
 	.nav-topics {
 		padding-top: 12px;
@@ -45,6 +51,7 @@
 	.nav-topics>#single-button {
 		font-size :1.083em;
 		background-color: #654233;
+		border-color: #54372a;
 		text-transform: uppercase;
 		font-weight: 400;
 		letter-spacing: 3px;
@@ -52,6 +59,12 @@
 	.nav-topics>#single-button:hover, .nav-topics>#single-button:focus {
 		/*color: #ffffff;*/
 		/*background-color: #e74b47;*/
+	}
+	.nav-topics>#single-button:hover,
+	.nav-topics>#single-button:focus {
+		color: #fff;
+		background-color: #432c22;
+		border-color: #2b1c16;
 	}
 	
 	/* TEST */ /*
@@ -94,3 +107,7 @@
 /*		margin-bottom: 10px;*/
 /*	}*/
 /*}*/
+
+
+/********************************************************/
+
