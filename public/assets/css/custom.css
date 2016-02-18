@@ -66,6 +66,9 @@
 		background-color: #432c22;
 		border-color: #2b1c16;
 	}
+	.brand {
+		padding-bottom: 40px;
+	}
 	
 	/* TEST */ /*
 	.nav > li > a {

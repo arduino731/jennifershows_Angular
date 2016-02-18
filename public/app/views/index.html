@@ -2,7 +2,6 @@
 <html lang="en" ng-app="myApp">
 <head>
     
-    <!--http://www.lavishbootstrap.com/?utf8=%E2%9C%93&image_url=http%3A%2F%2Fs10.postimg.org%2F7lmazrwrt%2FAshampoo_Snap_2016_02_15_23h47m31s_001.png&commit=Go+Lavish-->
     <!--Information -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +26,14 @@
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
     <!-- Custom CSS -->
     <link href="assets/css/custom.css" rel="stylesheet">
+    
+    <!-- style element of test for only ads-->
+    <style>
+        @media(max-width: 349px) { .example_responsive_1 { width: 200px; height: 200px; background-color: red; } }
+        @media(min-width: 350px) { .example_responsive_1 { width: 300px; height: 250px; background-color: orange; } }
+        @media(min-width: 500px) { .example_responsive_1 { width: 468px; height: 60px; background-color: blue; } }
+        @media(min-width: 800px) { .example_responsive_1 { width: 728px; height: 90px; background-color: yellow; } }
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -91,6 +98,18 @@
     <!--? -->
     <div class="brand">Jennifer's Shows</div>
     
+    <!-- ADS of first box -->
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="example_responsive_1 text-center center-block">
+                    <h1>AD of one box</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    
     <div class="dontate" style="display:none">
         <!--<div class="text-center">-->
         <!--    <p>move to right navbar </p>-->
@@ -118,17 +137,28 @@
     </div>
     <!-- /.container -->
 
+    <!-- ADS of second box -->
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="example_responsive_1 text-center center-block"><h1>AD of second box</h1></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Jennifershows.com 2016</p>
+                    
+                    <!-- What is this -->
                     <!-- Go to www.addthis.com/dashboard to generate a new set of sharing buttons -->
                     <a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/facebook.png" border="0" alt="Facebook"/></a>
                     <a href="https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/google_plusone_share.png" border="0" alt="Google+"/></a>
                     <a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/twitter.png" border="0" alt="Twitter"/></a>
                     <a href="https://www.addthis.com/bookmark.php?source=tbx32nj-1.0&v=300&url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/addthis.png" border="0" alt="Addthis"/></a>
-
                 </div>
             </div>
         </div>
