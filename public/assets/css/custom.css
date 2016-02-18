@@ -114,3 +114,31 @@
 
 /********************************************************/
 
+@media(max-width: 349px) {
+	.ads-t-and-b {
+		width: 200px;
+		height: 200px;
+		background-color: red;
+	}
+}
+@media(min-width: 350px) {
+	.ads-t-and-b {
+		width: 300px;
+		height: 250px;
+		background-color: orange;
+	}
+}
+@media(min-width: 500px) {
+	.ads-t-and-b {
+		width: 468px;
+		height: 60px;
+		background-color: blue;
+	}
+}
+@media(min-width: 800px) {
+	.ads-t-and-b {
+		width: 728px;
+		height: 90px;
+		background-color: yellow;
+	}
+}
