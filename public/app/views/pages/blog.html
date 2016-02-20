@@ -32,16 +32,14 @@
             </div>
             
                 <div class="blog-post">
-                <!-- <h2 class="blog-post-title">Sample blog post</h2> -->
-                <div class="blog-post-title" dir-paginate="blog in blogs | filter:q | itemsPerPage: pageSize" current-page="currentPage">
-                <!-- <div class="blog-post-title" ng-repeat="blog in blogs"> -->
-                <h2>{{blog.title}}</h2>
-                <p class="blog-post-meta">{{blog.posted}} by <a href="blog/{{blog.id}}">Mark</a></p>
-                <p>{{blog.description}}</p>
-                <p> youtube </p>
-            </div>
-            <!-- <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p> -->
-            </div><!-- /.blog-post -->
+                    <div dir-paginate="blog in blogs | filter:q | itemsPerPage: pageSize" current-page="currentPage">
+                        <!-- <div class="blog-post-title" ng-repeat="blog in blogs"> -->
+                        <h2 class="blog-post-title">{{blog.title}}</h2><!-- add href as blog/blog.id?? -->
+                        <p class="blog-post-meta">{{blog.posted}} by <a href="blog/{{blog.id}}">Mark</a></p>
+                        <p>{{blog.description}}</p>
+                        <p> youtube </p>
+                    </div>
+                </div><!-- /.blog-post -->
   
                 <div class="blog-post">
              <!-- <h2 class="blog-post-title">Another blog post</h2>-->
