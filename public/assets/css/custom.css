@@ -1,3 +1,10 @@
+@media screen and (min-width:768px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
 
 /* Extra small devices (phones, less than 768px) */
 @media only screen and (min-width: 0) {
@@ -114,8 +121,22 @@
 
 /********************************************************/
 
+.ads-t-and-b-outer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.ads-sidebar-outer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 @media(max-width: 349px) {
 	.ads-t-and-b {
+		width: 200px;
+		height: 200px;
+		background-color: red;
+	}
+	.ads-sidebar {
 		width: 200px;
 		height: 200px;
 		background-color: red;
@@ -127,6 +148,11 @@
 		height: 250px;
 		background-color: orange;
 	}
+	.ads-sidebar {
+		width: 300px;
+		height: 250px;
+		background-color: orange;
+	}
 }
 @media(min-width: 500px) {
 	.ads-t-and-b {
@@ -134,11 +160,24 @@
 		height: 60px;
 		background-color: blue;
 	}
+	.ads-sidebar {
+		width: 336px;
+		height: 280px;
+		background-color: blue;
+	}
+}
+@media(min-width: 500px) {
+	
 }
 @media(min-width: 800px) {
 	.ads-t-and-b {
 		width: 728px;
 		height: 90px;
+		background-color: yellow;
+	}
+	.ads-sidebar {
+		width: 250px;
+		height: 360px;
 		background-color: yellow;
 	}
 }
