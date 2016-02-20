@@ -22,6 +22,14 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 	  	controller: "blogController",
 	  	templateUrl: "app/views/pages/blog.html"
 	  })
+	  //.when('/blog/2014/March/:blogId', {
+	  //	controller: "blogMonthController",
+	  //	templateUrl: "app/views/pages/2014/March/test.html"
+	  //})
+	  .when('/blog/:blogId', {
+	  	controller: "blogDetailsCtrl",
+	  	templateUrl: "app/views/pages/blog-details.html"
+	  })
 	  .when('/contact', {
 	  	controller: "contactController",
 	  	templateUrl: "app/views/pages/contact.html"

@@ -166,8 +166,12 @@
 		background-color: blue;
 	}
 }
-@media(min-width: 500px) {
-	
+@media(min-width: 768px) {
+	.ads-sidebar {
+		width: 120px;
+		height: 600px;
+		background-color: yellow;
+	}
 }
 @media(min-width: 800px) {
 	.ads-t-and-b {
@@ -175,9 +179,11 @@
 		height: 90px;
 		background-color: yellow;
 	}
+}
+@media(min-width: 992px) {
 	.ads-sidebar {
-		width: 250px;
-		height: 360px;
+		width: 160px;
+		height: 600px;
 		background-color: yellow;
 	}
 }

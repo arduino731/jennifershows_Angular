@@ -99,9 +99,50 @@ app.controller("aboutController", function($scope){
 	
 });
 
-app.controller("blogController", function($scope){
-	$scope.message = "Blog Page";
-});
+app.controller("blogController", ['$scope', '$http', '$log', function($scope, $http, $log){
+	$scope.blogs = []; // declare an empty array 
+
+		$http.get('json/blogs.json').success(function(data){
+			$scope.blogs = data;
+		  $scope.currentPage = 1;
+			$scope.pageSize = 2; // 10
+			console.log(data);
+		})
+
+	$scope.pageChangeHandler = function(num) {
+      console.log('meals page changed to ' + num);
+	};
+}]);
+
+app.controller('blogDetailsCtrl',  ['$scope', '$routeParams', '$http', '$filter', function($scope, $routeParams, $http, $filter){
+	var blogId = $routeParams.blogId;
+	// $scope.recipe = ; //declare an empty array
+	// $http.get('json/recipes.json').success(function(data){
+	// 		$scope.recipe = $filter('filter')(data, function(d){
+	// 			return d.id == blogId;
+	// 		})[0];
+	// 		$scope.mainImage = $scope.recipe.images[0].name;
+	// 		$scope.code = $scope.recipe.youtube;
+	// 		console.log($scope.code);
+	// });
+
+	// $scope.setImage = function(image){
+	// 	$scope.mainImage = image.name; 
+	// }
+}]);
+
+app.controller('blogMonthController',  ['$scope', '$routeParams', '$http', '$filter', function($scope, $routeParams, $http, $filter){
+	var blogId = $routeParams.blogId;
+	// $scope.recipe = ; //declare an empty array
+	// $http.get('json/recipes.json').success(function(data){
+	// 		$scope.recipe = $filter('filter')(data, function(d){
+	// 			return d.id == blogId;
+	// 		})[0];
+	// 		$scope.mainImage = $scope.recipe.images[0].name;
+	// 		$scope.code = $scope.recipe.youtube;
+	// 		console.log($scope.code);
+	// });
+}]);
 
 app.controller("contactController", function($scope){
 	$scope.message = "Contact Page!"; 
