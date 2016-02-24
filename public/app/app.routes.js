@@ -34,6 +34,14 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 	  	controller: "contactController",
 	  	templateUrl: "app/views/pages/contact.html"
 	  })
+	  .when('/shop', {
+	  	controller: "shopController",
+	  	templateUrl: "app/views/pages/shop.html"
+	  })
+	  .when('/funny', {
+	  	controller: "funnyController",
+	  	templateUrl: "app/views/pages/funny.html"
+	  })
 	  .otherwise({
 	  	redirectTo: '/'
 	  });

@@ -13,3 +13,10 @@ perfect example blog page http://v4-alpha.getbootstrap.com/examples/blog/
 links li navbar side http://v4-alpha.getbootstrap.com/examples/offcanvas/
 
 Social plugins https://developers.facebook.com/docs/plugins
+
+
+front page!!! example 
+https://disqus.com/home/settings/apps/ 
+http://www.huffingtonpost.com/ 
+https://developers.facebook.com/docs/plugins/comments#configurator 
+http://www.huffingtonpost.com/entry/senators-funding-deal-flint-water-crisis_us_56cde9fce4b0928f5a6e0161
