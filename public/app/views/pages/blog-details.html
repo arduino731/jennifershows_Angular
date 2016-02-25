@@ -1,9 +1,74 @@
 <div ng-controller="blogDetailsCtrl">
+    <div class="row">
+        <div class="box">
+            <div class="col-sm-8 blog-main">
+                <h2 class="blog-post-title">{{blog.title}}</h2><!-- add href as blog/blog.id?? -->
+                <p class="blog-post-meta">{{blog.posted}} by <a href="#">{{blog.name}}</a></p>
+                <p>{{blog.description}}</p>
+                <div class="embed-responsive embed-responsive-16by9">
+					<div my-youtube code="code"></div>
+				</div>
+			</div>
 
-	<h1>this is test page...</h1>
-	<h1>this is test page...</h1>
-	<h1>this is test page...</h1>
-	<h1>this is test page...</h1>
-	<h1>this is test page...</h1>
-	
-</div>
+            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+	            <div class="sidebar-module">
+	                <div class="center-block ads-sidebar-outer">
+	                    <!-- Test ad of sidebar -->
+	                    <div class="center-block ads-sidebar">
+	                    <!-- Real ADS -->
+	                    </div>
+	                    <!-- https://developers.facebook.com/docs/plugins/page-plugin -->
+	                    <div class="center-block ads-sidebar-outer">
+	                        <div class="fb-page" 
+	                          data-href="https://www.facebook.com/Jennifer-Alvarado-304015553125412" 
+	                          data-tabs="timeline" 
+	                          data-small-header="true" 
+	                          data-adapt-container-width="true" 
+	                          data-hide-cover="false" 
+	                          data-show-facepile="true"
+	                          data-width="400"
+
+	                          >
+	                          <div class="fb-xfbml-parse-ignore">
+	                              <blockquote cite="https://www.facebook.com/Jennifer-Alvarado-304015553125412">
+	                                  <a href="https://www.facebook.com/Jennifer-Alvarado-304015553125412">Jennifer-Alvarado</a>
+	                              </blockquote>
+	                          </div>
+	                        </div>
+	                    </div>
+	                    
+	                </div>
+	            </div>
+	            <div class="sidebar-module sidebar-module-inset">
+	                <h4>About</h4>
+	                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+	            </div>
+	            <div class="sidebar-module">
+		            <h4>Archives</h4>
+		            <ol class="list-unstyled">
+		              <li><a href="#">March 2014</a></li>
+		              <li><a href="#">February 2014</a></li>
+		              <li><a href="#">January 2014</a></li>
+		              <li><a href="#">December 2013</a></li>
+		              <li><a href="#">November 2013</a></li>
+		              <li><a href="#">October 2013</a></li>
+		              <li><a href="#">September 2013</a></li>
+		              <li><a href="#">August 2013</a></li>
+		              <li><a href="#">July 2013</a></li>
+		              <li><a href="#">June 2013</a></li>
+		              <li><a href="#">May 2013</a></li>
+		              <li><a href="#">April 2013</a></li>
+		            </ol>
+		        </div>
+	            <div class="sidebar-module">
+		            <h4>Elsewhere</h4>
+		            <ol class="list-unstyled">
+		              <li><a href="#">GitHub</a></li>
+		              <li><a href="#">Twitter</a></li>
+		              <li><a href="#">Facebook</a></li>
+		            </ol>
+		        </div>
+	        </div><!-- /.blog-sidebar -->
+	    </div>
+	</div> 
+</div> 

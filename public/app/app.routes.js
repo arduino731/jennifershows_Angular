@@ -22,6 +22,10 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 	  	controller: "blogController",
 	  	templateUrl: "app/views/pages/blog.html"
 	  })
+	  .when('/blog/karatbars', {
+	  	// controller: "karatbarsController",
+	  	templateUrl: "app/views/pages/karatbars.html"
+	  })
 	  //.when('/blog/2014/March/:blogId', {
 	  //	controller: "blogMonthController",
 	  //	templateUrl: "app/views/pages/2014/March/test.html"
@@ -33,6 +37,14 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 	  .when('/contact', {
 	  	controller: "contactController",
 	  	templateUrl: "app/views/pages/contact.html"
+	  })
+	  .when('/shop', {
+	  	controller: "shopController",
+	  	templateUrl: "app/views/pages/shop.html"
+	  })
+	  .when('/funny', {
+	  	controller: "funnyController",
+	  	templateUrl: "app/views/pages/funny.html"
 	  })
 	  .otherwise({
 	  	redirectTo: '/'
