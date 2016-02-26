@@ -1,64 +1,38 @@
 <div ng-controller="blogController">
   <div class="brand">Jennifer's Shows</div>
-    
     <div class="row">
         <div class="box">
-            <hr>
-            <h2 class="intro-text text-center">Jennifer
-                <strong>Alvarado</strong>
-            </h2>
-            <hr>
-            <div class="col-lg-6">
-                <img class="img-responsive img-border img-left" style="height:200px;"  src="assets/img/1.jpg" alt="">
-                <hr class="visible-xs">
-                <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
-                <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </div>
-        
-            <div class="col-lg-6">
-                <img class="img-responsive img-border img-left pull-right" style="height:200px;" src="assets/img/2.jpg" alt="">
-                <hr class="visible-xs">
-                <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
-                <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </div>
-        </div>
-    </div>
+          <div class="col-sm-8 blog-main">
           
-    <div class="row">
-        <div class="box">
-            <div class="col-sm-8 blog-main">
-            
-                <div class="row">
-                <div class="col-xs-12">
-                    <h3>Blogs Page: {{ currentPage }}</h3>
-                </div>
-                <div class="col-xs-12">
-                    <label for="search">Search:</label>
-                    <input ng-model="q" id="search" class="form-control" placeholder="Filter text">
-                </div>
-                <div class="col-xs-12">
-                    <label for="search">items per page:</label>
-                    <input type="number" min="1" max="100" class="form-control" ng-model="pageSize">
-                </div>
+            <div class="row">
+              <div class="col-xs-12">
+                  <h3>Blogs Page: {{ currentPage }}</h3>
+              </div>
+              <div class="col-xs-12">
+                  <label for="search">Search:</label>
+                  <input ng-model="q" id="search" class="form-control" placeholder="Filter text">
+              </div>
+              <div class="col-xs-12">
+                  <label for="search">items per page:</label>
+                  <input type="number" min="1" max="100" class="form-control" ng-model="pageSize">
+              </div>
             </div>
-            
-                <div class="blog-post">
-                    <div dir-paginate="blog in blogs | filter:q | itemsPerPage: pageSize" current-page="currentPage">
-                        <!-- <div class="blog-post-title" ng-repeat="blog in blogs"> -->
-                        <h2 class="blog-post-title">{{blog.title}}</h2><!-- add href as blog/blog.id?? -->
-                        <p class="blog-post-meta">{{blog.posted}} by <a href="blog/{{blog.id}}">{{blog.name}}</a></p>
-                        <p>{{blog.description}}</p>
-
-                        <div style="height:400px; background:blue;">
-                          <img ng-src="assets/img/blogs/{{blog.images[0].name}}" class="img-responsive" style="height:400px" alt="{{blog.name}}">
-                        </div>
-
+          
+            <div class="blog-post">
+                <div dir-paginate="blog in blogs | filter:q | itemsPerPage: pageSize" current-page="currentPage">
+                    <div class="text-center">
+                      <h2 class="blog-post-title">{{blog.title}}</h2><!-- add href as blog/blog.id?? -->
+                      <p class="blog-post-meta">Posted: {{blog.posted}} by <a href="blog/{{blog.id}}">{{blog.name}}</a></p>
+                      <p>Description:{{blog.description}}</p>
                     </div>
-                </div><!-- /.blog-post -->
+                    <div class="blog-image">
+                      <img ng-src="assets/img/blogs/{{blog.images[0].name}}" class="img-responsive" style="height:400px; margin:auto; display:block;" alt="{{blog.name}}">
+                    </div>
+
+                </div>
+            </div><!-- /.blog-post -->
   
-                <div class="blog-post">
+            <div class="blog-post">
              <!-- <h2 class="blog-post-title">Another blog post</h2>-->
              <!-- <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>-->
   
@@ -70,94 +44,93 @@
              <!-- <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> -->
             </div><!-- /.blog-post -->
   
-                <div class="blog-post">
+            <div class="blog-post">
               <!--<h2 class="blog-post-title">New feature</h2>-->
               <!--<p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>-->
   
               <!--<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>-->
             </div><!-- /.blog-post -->
 
-                <nav>
-            <div ng-controller="OtherController" class="other-controller">
-                  <div class="text-center">
-                  <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="dirPagination.tpl.html"></dir-pagination-controls>
-                  </div>
-            </div>
-          </nav>
+            <nav>
+              <div ng-controller="OtherController" class="other-controller">
+                    <div class="text-center">
+                    <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="dirPagination.tpl.html"></dir-pagination-controls>
+                    </div>
+              </div>
+            </nav>
 
-            </div>
-            <!-- /.blog-main -->
+          </div><!-- col-sm-8 /.blog-main -->
 
-            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
             <div class="sidebar-module">
-                <div class="center-block ads-sidebar-outer">
-                    <!-- Test ad of sidebar -->
-                    <div class="center-block ads-sidebar">
+              <div class="center-block ads-sidebar-outer">
+                  <!-- Test ad of sidebar -->
+                <div class="center-block ads-sidebar">
                     <!-- Real ADS -->
-                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                          <!-- sideBar2 -->
-                          <ins class="adsbygoogle"
-                               style="display:block"
-                               data-ad-client="ca-pub-3887486988814609"
-                               data-ad-slot="1734068379"
-                               data-ad-format="auto"></ins>
-                          <script>
-                          (adsbygoogle = window.adsbygoogle || []).push({});
-                          </script>
-                    </div>
-                    <!-- https://developers.facebook.com/docs/plugins/page-plugin -->
-                    <div class="center-block ads-sidebar-outer">
-                        <div class="fb-page" 
-                          data-href="https://www.facebook.com/Jennifer-Alvarado-304015553125412" 
-                          data-tabs="timeline" 
-                          data-small-header="true" 
-                          data-adapt-container-width="true" 
-                          data-hide-cover="false" 
-                          data-show-facepile="true"
-                          data-width="400"
-
-                          >
-                          <div class="fb-xfbml-parse-ignore">
-                              <blockquote cite="https://www.facebook.com/Jennifer-Alvarado-304015553125412">
-                                  <a href="https://www.facebook.com/Jennifer-Alvarado-304015553125412">Jennifer-Alvarado</a>
-                              </blockquote>
-                          </div>
-                        </div>
-                    </div>
-                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- sideBar -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-3887486988814609"
+                         data-ad-slot="8680316378"
+                         data-ad-format="auto"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
+              </div>
+              <!-- https://developers.facebook.com/docs/plugins/page-plugin -->
+              <div class="center-block ads-sidebar-outer">
+                <!-- <div class="center-block ads-sidebar"> -->
+                  <div class="fb-page" 
+                    data-href="https://www.facebook.com/Jennifer-Alvarado-304015553125412" 
+                    data-tabs="timeline" 
+                    data-small-header="true" 
+                    data-adapt-container-width="true" 
+                    data-hide-cover="false" 
+                    data-show-facepile="true"
+                    data-width="242"
+
+                    >
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote cite="https://www.facebook.com/Jennifer-Alvarado-304015553125412">
+                            <a href="https://www.facebook.com/Jennifer-Alvarado-304015553125412">Jennifer-Alvarado</a>
+                        </blockquote>
+                    </div>
+                  </div>
+                <!-- </div> -->
+              </div>
             </div>
             <div class="sidebar-module sidebar-module-inset">
                 <h4>About</h4>
                 <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
             </div>
             <div class="sidebar-module">
-            <h4>Archives</h4>
-            <ol class="list-unstyled">
-              <li><a href="/blog/karatbars">Karatbars</a></li>
-              <li><a href="#">February 2014</a></li>
-              <li><a href="#">January 2014</a></li>
-              <li><a href="#">December 2013</a></li>
-              <li><a href="#">November 2013</a></li>
-              <li><a href="#">October 2013</a></li>
-              <li><a href="#">September 2013</a></li>
-              <li><a href="#">August 2013</a></li>
-              <li><a href="#">July 2013</a></li>
-              <li><a href="#">June 2013</a></li>
-              <li><a href="#">May 2013</a></li>
-              <li><a href="#">April 2013</a></li>
-            </ol>
-          </div>
+              <h4>Archives</h4>
+              <ol class="list-unstyled">
+                <li><a href="/blog/karatbars">Karatbars</a></li>
+                <li><a href="#">February 2014</a></li>
+                <li><a href="#">January 2014</a></li>
+                <li><a href="#">December 2013</a></li>
+                <li><a href="#">November 2013</a></li>
+                <li><a href="#">October 2013</a></li>
+                <li><a href="#">September 2013</a></li>
+                <li><a href="#">August 2013</a></li>
+                <li><a href="#">July 2013</a></li>
+                <li><a href="#">June 2013</a></li>
+                <li><a href="#">May 2013</a></li>
+                <li><a href="#">April 2013</a></li>
+              </ol>
+            </div>
             <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-            </ol>
-          </div>
-        </div>
-            <!-- /.blog-sidebar -->
-        </div>
-    </div>
+              <h4>Elsewhere</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ol>
+            </div>
+          </div> <!-- /.blog-sidebar -->
+        </div> <!-- box -->
+    </div> <!-- row -->
 </div> 

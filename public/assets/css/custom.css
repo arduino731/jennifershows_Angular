@@ -186,4 +186,11 @@
 		height: 600px;
 		background-color: yellow;
 	}
+
+	.blog-image {
+		background-color: #685D58;
+		border: solid 5px #DE6460; 
+		border-radius: 15px; 
+		margin: 0 100px 0 150px;
+	}
 }
