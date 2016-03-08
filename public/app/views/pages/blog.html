@@ -23,10 +23,10 @@
                     <div class="text-center">
                       <h2 class="blog-post-title">{{blog.title}}</h2><!-- add href as blog/blog.id?? -->
                       <p class="blog-post-meta">Posted: {{blog.posted}} by <a href="blog/{{blog.id}}">{{blog.name}}</a></p>
-                      <p>Description:{{blog.description}}</p>
+                      <p>Description: {{blog.description}}</p>
                     </div>
                     <div class="blog-image">
-                      <img ng-src="assets/img/blogs/{{blog.images[0].name}}" class="img-responsive" style="height:400px; margin:auto; display:block;" alt="{{blog.name}}">
+                      <img ng-src="assets/img/blogs/{{blog.images[0].name}}" class="img-responsive" style="height:400px; margin:auto; display:block;" alt="{{blog.images[0].name}}">
                     </div>
 
                 </div>
