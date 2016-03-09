@@ -106,7 +106,7 @@
         <!-- /.container -->
     </nav>
     <!-- End Nav -->
-    
+    <div class="brand">Jennifer's Shows</div>
     <!-- ADS of first box -->
     <div class="container">
         <div class="center-block ads-t-and-b-outer">
@@ -145,9 +145,18 @@
         <!--        </form>-->
         <!--</div>-->
     </div>
-    
+    <!-- ngview -->
     <div class="container">
-        <div ng-view></div>
+        <div class="row">
+            <div class="box">
+                <div class="col-sm-8" ng-view></div>
+                <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                    <div>only sidebar of ads</div>
+                    <div NG-IF>only facebook plugin</div>
+                    <div NG-IF><h4>Archives</h4></div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- /.container -->
 
