@@ -1,7 +1,6 @@
 var app = angular.module('JenniferShows.controller', []);
 
 app.controller("indexController", function($scope, $location){
-	$scope.message = "this is index page";
 	$scope.isActive = function(route) {
         return route === $location.path();
     }
@@ -18,28 +17,6 @@ app.controller("indexController", function($scope, $location){
       id: currIndex++
     });
   };
-
-// $scope.addSlide = function(){
-//   slides.push(
-//     {
-//       image: 'http://lorempixel.com/400/200/',
-//       text: "Nice image"
-//     },
-//     {
-//       image: 'http://lorempixel.com/400/200/food',
-//       text: "Awesome photograph"
-//     },
-//     {
-//       image: 'http://lorempixel.com/400/200/sports',
-//       text: "That is so cool"
-//     },
-//     {
-//       image: 'http://lorempixel.com/400/200/people',
-//       text: "I love that"
-//     }
-//   );
-
-// };
 
   for (var i = 0; i < 4; i++) {
     $scope.addSlide();

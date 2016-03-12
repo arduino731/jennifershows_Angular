@@ -141,6 +141,24 @@
 		height: 200px;
 		background-color: red;
 	}
+	#home1 div{
+	    height: 458px;
+	    position: relative;
+	    text-align: center;
+	    top: 140px;
+	    width: 100%;
+	    font-size: 3em;
+	    color: #eb6864;
+	    display: block;
+	    margin-bottom: 50px;
+	    -webkit-text-stroke: 1px black;
+	   text-shadow:
+	       3px 3px 0 #000,
+	     -1px -1px 0 #000,  
+	      1px -1px 0 #000,
+	      -1px 1px 0 #000,
+	       1px 1px 0 #000;
+	}
 }
 @media(min-width: 350px) {
 	.ads-t-and-b {
@@ -153,6 +171,25 @@
 		height: 250px;
 		background-color: orange;
 	}
+	#home1 div{
+	    height: 458px;
+	    position: relative;
+	    text-align: center;
+	    top: 140px;
+	    width: 100%;
+	    font-size: 3em;
+	    color: #eb6864;
+	    display: block;
+	    margin-bottom: 50px;
+	    -webkit-text-stroke: 1px black;
+	   text-shadow:
+	       3px 3px 0 #000,
+	     -1px -1px 0 #000,  
+	      1px -1px 0 #000,
+	      -1px 1px 0 #000,
+	       1px 1px 0 #000;
+	}
+
 }
 @media(min-width: 500px) {
 	.ads-t-and-b {
@@ -179,6 +216,9 @@
 		height: 90px;
 		background-color: yellow;
 	}
+	#home1 div {
+		font-size: 6em;
+	}
 }
 @media(min-width: 992px) {
 	.ads-sidebar {
@@ -193,4 +233,54 @@
 		border-radius: 15px; 
 		margin: 0 100px 0 150px;
 	}
+}
+
+#home1 { 
+background: url(http://churchofacts.ie/images/2011/03/World-in-Gods-Hands.jpg)50% 26% fixed; 
+min-height: 800px;
+margin: 0 auto;
+width: 100%;
+max-width: 1920px; 
+position: relative; 
+margin-bottom: 50px;
+}
+
+#home { 
+background: url(../img/1.jpg) 17% 1% no-repeat fixed; 
+min-height: 700px;
+margin: 70px auto;
+width: 100%;
+max-width: 1920px; 
+position: relative; 
+margin-bottom: 50px;
+}
+
+
+#about { 
+  background: url(http://vemco.com/wp-content/uploads/2012/09/image-banner2.jpg) 25% 0 no-repeat fixed; min-height: 1000px; 
+  height: 1000px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+ 
+#about article { 
+  height: 58px; 
+  /*position: absolute; */
+  text-align: center; 
+  top: 50%; 
+  width: 100%; 
+}
+.proc{
+	border: solid 10px #EB6864;
+}
+
+.proc i{
+	font-size: 50px;
+	color:#EB6864;
+	text-align: center;
+    display: block;
 }
