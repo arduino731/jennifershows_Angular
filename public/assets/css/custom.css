@@ -284,3 +284,39 @@ margin-bottom: 50px;
 	text-align: center;
     display: block;
 }
+
+.video-player-box {
+    position: relative;
+    top: 10px;
+    z-index: 10;
+    display: inline-block;
+}
+.video-player-box>img{
+	max-width: 350px;
+}
+.video-player-box-inner {
+    position: absolute;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    overflow: hidden;
+    top: 11%;
+    bottom: 11.4%;
+    right: 5.3%;
+    left: 5.3%;
+    background: #202020;
+}
+.video-player-box-inner img, .video-player-box-inner video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #202020;
+    -webkit-transform: scaleY(1.01);
+    -ms-transform: scaleY(1.01);
+    -o-transform: scaleY(1.01);
+    transform: scaleY(1.01);
+}
