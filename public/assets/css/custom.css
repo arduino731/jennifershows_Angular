@@ -245,7 +245,7 @@ position: relative;
 margin-bottom: 50px;
 }
 
-#home { 
+#home2 { 
 background: url(../img/1.jpg) 17% 1% no-repeat fixed; 
 min-height: 700px;
 margin: 70px auto;
@@ -256,7 +256,7 @@ margin-bottom: 50px;
 }
 
 
-#about { 
+#about { /* shark image */
   background: url(http://vemco.com/wp-content/uploads/2012/09/image-banner2.jpg) 25% 0 no-repeat fixed; min-height: 1000px; 
   height: 1000px; 
   margin: 0 auto; 
@@ -277,14 +277,12 @@ margin-bottom: 50px;
 .proc{
 	border: solid 10px #EB6864;
 }
-
 .proc i{
 	font-size: 50px;
 	color:#EB6864;
 	text-align: center;
     display: block;
 }
-
 .video-player-box {
     position: relative;
     top: 10px;
