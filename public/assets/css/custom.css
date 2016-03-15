@@ -255,25 +255,6 @@ position: relative;
 margin-bottom: 50px;
 }
 
-
-#about { /* shark image */
-  background: url(http://vemco.com/wp-content/uploads/2012/09/image-banner2.jpg) 25% 0 no-repeat fixed; min-height: 1000px; 
-  height: 1000px; 
-  margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
-}
- 
-#about article { 
-  height: 58px; 
-  /*position: absolute; */
-  text-align: center; 
-  top: 50%; 
-  width: 100%; 
-}
 .proc{
 	border: solid 10px #EB6864;
 }
