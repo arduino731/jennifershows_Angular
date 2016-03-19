@@ -19,21 +19,29 @@
               </div>
             </div>
           
-            <div class="blog-post">
-                <div dir-paginate="blog in blogs | filter:q | itemsPerPage: pageSize" current-page="currentPage">
-                    <div class="text-center">
-                      <h2 class="blog-post-title">{{blog.title}}</h2><!-- add href as blog/blog.id?? -->
-                      <p class="blog-post-meta">Posted: {{blog.posted}} by <a href="blog/{{blog.id}}">{{blog.name}}</a></p>
-                      <p>Description: {{blog.description}}</p>
-                    </div>
-                    <div class="blog-image">
-                      <img ng-src="assets/img/blogs/{{blog.images[0].name}}" class="img-responsive" style="height:400px; margin:auto; display:block;" alt="{{blog.images[0].name}}">
-                    </div>
-                    <br>
-                <hr>
-                <br>
+            <div class="row">
+              <div class="panel panel-primary" style="    margin-top: 15px;">
+                <div class="panel-body">
+                  <div dir-paginate="blog in blogs | filter:q | itemsPerPage: pageSize" current-page="currentPage">
+                      <div class="col-md-6 col-sm-6 portfolio-item">
+                          <a href="/blog/{{blog.id}}" class="portfolio-link" >
+                              <div class="portfolio-hover" style="background: #b31217;">
+                                  <div class="portfolio-hover-content">
+                                      <i class="fa fa-youtube fa-3x"></i>
+                                  </div>
+                              </div>
+                              <div class="portfolio-caption">
+                                <h2 class="text-center">{{blog.title}}</h2>
+                                <p class="text-center">Posted: {{blog.posted}} </p>
+                                <img ng-src="assets/img/blogs/{{blog.images[0].name}}" class="img-responsive" alt="{{blog.name}}">
+                                <p class="text-muted" style="margin-top: 30px;">{{blog.description}}</p>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
                 </div>
-            </div><!-- /.blog-post -->
+              </div>
+            </div>
   
             <div class="blog-post">
              <!-- <h2 class="blog-post-title">Another blog post</h2>-->

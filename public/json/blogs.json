@@ -61,29 +61,5 @@
 				"name": "aslBullshit.png"
 			} 
 		]
-	},
-	{
-		"id": 2,
-		"posted": "2/20/2016",
-		"title": "Sample Blog Post 2",
-		"description": "description...2",
-		"youtube": "a7rr6Dl_CdI",
-		"images": [
-			{ 
-				"name": null
-			} 
-		]
-	},
-	{
-		"id": 1,
-		"posted": "2/19/2016",
-		"title": "Sample Blog Post",
-		"description": "description...",
-		"youtube": "a7rr6Dl_CdI",
-		"images": [
-			{ 
-				"name": null
-			} 
-		]
 	}
 ]

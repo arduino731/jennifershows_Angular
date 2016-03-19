@@ -299,3 +299,8 @@ margin-bottom: 50px;
     -o-transform: scaleY(1.01);
     transform: scaleY(1.01);
 }
+
+.portfolio-item a {
+	text-decoration: none;
+	color:yellow;
+}
