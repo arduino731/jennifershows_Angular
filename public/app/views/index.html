@@ -35,29 +35,9 @@
         @media(min-width: 500px) { .example_responsive_1 { width: 468px; height: 60px;   background-color: blue;} }
         @media(min-width: 800px) { .example_responsive_1 { width: 728px; height: 90px;   background-color: yellow;} }
     </style>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "c29d063c-4086-44e5-8cc1-28dcfb112b47", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
 
 <body ng-controller="indexController">
-    <!-- required after body tag for Facebook plugin -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="container-fluid">
@@ -149,6 +129,7 @@
     <!-- NGVIEW -->
     <div class="ng-view" autoscroll="true"></div>
 
+<!--
     <div class="container">
         <div class="box text-center">
             <h1>LASTEST NEWS</h1>
@@ -158,9 +139,7 @@
                     <div class="sidebar-module">
                         <div class="center-block ads-sidebar-outer">
                             <div class="center-block ads-sidebar">
-                                <!-- Real ADS -->
                                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                                <!-- sideBar -->
                                 <ins class="adsbygoogle"
                                      style="display:block"
                                      data-ad-client="ca-pub-3887486988814609"
@@ -171,25 +150,8 @@
                                 </script>
                             </div>
                         </div>
-                        <!-- https://developers.facebook.com/docs/plugins/page-plugin -->
-                        <div class="center-block ads-sidebar-outer">
-                            <div class="fb-page" 
-                                data-href="https://www.facebook.com/Jennifer-Alvarado-304015553125412" 
-                                data-tabs="timeline" 
-                                data-small-header="true" 
-                                data-adapt-container-width="true" 
-                                data-hide-cover="false" 
-                                data-show-facepile="true"
-                                data-width="242">
-                                <div class="fb-xfbml-parse-ignore">
-                                    <blockquote cite="https://www.facebook.com/Jennifer-Alvarado-304015553125412">
-                                        <a href="https://www.facebook.com/Jennifer-Alvarado-304015553125412">Jennifer-Alvarado</a>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div> <!-- /.blog-sidebar -->
+                </div>
                 <div class="col-md-4 col-sm-6">
                     <h2>Skin Care</h2><a href="/blog/9">Open Page <i class="fa fa-external-link"></i></a>
                     <br>
@@ -241,6 +203,7 @@
             </div>
         </div>
     </div>
+-->
 
     <!-- ADS of second box -->
     <div class="container ">
@@ -264,19 +227,11 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Jennifershows.com 2016</p>
-                    
-                    <!-- Go to www.addthis.com/dashboard to generate a new set of sharing buttons -->
-                    <a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/facebook.png" border="0" alt="Facebook"/></a>
-                    <a href="https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/google_plusone_share.png" border="0" alt="Google+"/></a>
-                    <a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/twitter.png" border="0" alt="Twitter"/></a>
-                    <a href="https://www.addthis.com/bookmark.php?source=tbx32nj-1.0&v=300&url=http%3A%2F%2Fwww.addthis.com&pubid=ra-56ac194d57cdf297&ct=1&title=AddThis%20-%20Get%20likes%2C%20get%20shares%2C%20get%20followers&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/addthis.png" border="0" alt="Addthis"/></a>
+                    <a href="https://www.facebook.com/Jennifer-Alvarado-304015553125412" target="_blank">Facebook</a>
                 </div>
             </div>
         </div>
     </footer>
-
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ac194d57cdf297" async="async"></script>
 <!-- angular libraby 1.4.9 version-->
 <script type="text/javascript" src="assets/bower_components/angular/angular.js"></script>
 <!-- angualr ui bootstrap  -->
