@@ -17,11 +17,3 @@ app.directive('myYoutube', function($sce) {
     }
   };
 });
-
-app.directive('myAdSense', function() {
-  return {
-    restrict: 'A',
-    templateUrl: 'adsTpl',
-
-  };
-});
