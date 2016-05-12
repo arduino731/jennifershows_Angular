@@ -4,7 +4,6 @@
     <div class="row">
         <div class="box">
           <div class="col-sm-8 blog-main">
-          
             <div class="row">
               <div class="col-xs-12">
                   <h3>Blogs Page: {{ currentPage }}</h3>
@@ -17,6 +16,14 @@
                   <label for="search">items per page:</label>
                   <input type="number" min="1" max="100" class="form-control" ng-model="pageSize">
               </div>
+              
+              <nav>
+                <div ng-controller="OtherController" class="other-controller">
+                      <div class="text-center">
+                      <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="dirPagination.tpl.html"></dir-pagination-controls>
+                      </div>
+                </div>
+              </nav>
             </div>
           
             <div class="row">
@@ -42,25 +49,6 @@
                 </div>
               </div>
             </div>
-  
-            <div class="blog-post">
-             <!-- <h2 class="blog-post-title">Another blog post</h2>-->
-             <!-- <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>-->
-  
-             <!-- <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>-->
-             <!--  <blockquote>
-             <!--   <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-             <!-- </blockquote>-->
-             <!-- <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>-->
-             <!-- <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> -->
-            </div><!-- /.blog-post -->
-  
-            <div class="blog-post">
-              <!--<h2 class="blog-post-title">New feature</h2>-->
-              <!--<p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>-->
-  
-              <!--<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>-->
-            </div><!-- /.blog-post -->
 
             <nav>
               <div ng-controller="OtherController" class="other-controller">
@@ -69,7 +57,6 @@
                     </div>
               </div>
             </nav>
-
           </div><!-- col-sm-8 /.blog-main -->
 
           <div class="col-sm-3 col-sm-offset-1 blog-sidebar">

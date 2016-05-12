@@ -8,17 +8,25 @@ app.controller("indexController", function($scope, $location){
   $scope.myInterval = 3000;
   $scope.noWrapSlides = false;
   var slides = $scope.slides = [];
-  var currIndex = 0; 
+  var slidees = $scope.slidees = [];
+  var currIndex = 0;
+  var currIndex2 = 0; 
 
     $scope.addSlide = function() {
     slides.push({
-      image:[ 'assets/img/port/port01.jpg', 'assets/img/port/port02.jpg', 'assets/img/port/port03.jpg'][slides.length % 3],
-      text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+      image:[ 'assets/img/port/1.jpeg', 'assets/img/port/2.jpg', 'assets/img/port/3.jpg'][slides.length % 3],
+      text: ['Keep calm and love Deaf','Deaf is not dumb','Deaf Government Area'][slides.length % 3],
       id: currIndex++
+    });
+
+    slidees.push({
+      image:[ 'assets/img/port/4.jpg', 'assets/img/port/5.jpg', 'assets/img/port/6.jpg'][slidees.length % 3],
+      text: ['I love you','Awesome photograph','I cant hear you'][slidees.length % 3],
+      id: currIndex2++
     });
   };
 
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 3; i++) {
     $scope.addSlide();
   }
 
@@ -38,8 +46,7 @@ app.controller("recipesController", ['$scope', '$http', '$log', 'ergastAPIservic
 			$scope.recipes = data;
 		  	$scope.currentPage = 1;
 			$scope.pageSize = 10;
-
-			console.log(data);
+			// console.log(data);
 		})
 
 	$scope.pageChangeHandler = function(num) {
@@ -49,7 +56,7 @@ app.controller("recipesController", ['$scope', '$http', '$log', 'ergastAPIservic
 
 function OtherController($scope) {
   $scope.pageChangeHandler = function(num) {
-    console.log('going to page ' + num);
+    // console.log('going to page ' + num);
   };
 }
 
@@ -82,12 +89,12 @@ app.controller("blogController", ['$scope', '$http', '$log', function($scope, $h
 		$http.get('json/blogs.json').success(function(data){
 			$scope.blogs = data;
 		  	$scope.currentPage = 1;
-			$scope.pageSize = 2; // 10
-			console.log(data);
+			$scope.pageSize = 4; // 10
+			// console.log(data);
 		})
 
 	$scope.pageChangeHandler = function(num) {
-      console.log('meals page changed to ' + num);
+      // console.log('meals page changed to ' + num);
 	};
 }]);
 
