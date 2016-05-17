@@ -1,7 +1,6 @@
-<div id="idForJS" class ="container" style=" background: blue;
+<div id="idForJS" ng-controller="storeController" class ="container" style=" background: blue;
     margin-bottom: 50px;
     margin-top: -40px;" >
-	<!-- <div class="brand">Store</div> -->
         <div class="well">
             <a class="logo" href="{{INSIDE_HEADER_LINK}}">
                 <img src="{{INSIDE_HEADER_IMAGE}}" alt="logo" style="width:200px; height:50px;"/>
@@ -13,7 +12,7 @@
         <!-- done above checked -->
 
 
-		<div id="store" class="content col-md-12" style="overflow: hidden;" ng-controller="storeController">
+		<div id="store" class="content col-md-12" style="overflow: hidden;" >
 			<form class="form-search">
 		        <div class="col-md-12 store_container">
 		            <div class="content-store col-md-5">
@@ -84,7 +83,7 @@
 		                            <a href="" ng-click="cart.addItem(product.sku, product.productname, product.unitprice, 1)">
 		                                <div class="btn btn-x-blue">Add cart</div>
 		                            </a>
-		                            <a ng-href="#/products/{{product.sku}}">
+		                            <a ng-href="/products/{{product.sku}}">
 		                                <div class="btn btn-x-blue">Details</div>
 		                            </a>
 		                            <div class="categoryname" href="#" style="margin:2px 5% 0px 20px !important;float:right !important;">{{product.categoryname}}</div>

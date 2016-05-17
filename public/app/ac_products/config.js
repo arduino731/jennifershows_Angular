@@ -2,7 +2,7 @@
 var config_module = angular.module('storeApp.config', [])
 .constant('CONFIG',
 {
-    'CF_STORE_ID': 'Let Store',
+    'CF_STORE_ID': 'Led Store',
     'CF_STORE_PAGE': 'storefront.html',
     'CF_STORE_BG_IMAGE': 'ac_img/bg1.jpg',
     'CF_DISTRIBUTOR_ID': 'WS1732',
@@ -12,7 +12,7 @@ var config_module = angular.module('storeApp.config', [])
     'CF_PRODUCTS_FILE': 'app/ac_products/products.txt',
     'CF_PRODUCTS_FOLDER': 'ac_products',
     'CF_NAVBAR_THEME': 'navbar_gray_gradient',
-    'CF_NAVBAR_LOGO_TEXT': 'Led Store?',
+    'CF_NAVBAR_LOGO_TEXT': 'Led Store',
     'CF_NAVBAR_LOGO_LINK': '#/store',
     'CF_INSIDE_HEADER_SHOW': true,
     'CF_INSIDE_HEADER_LINK': '/store',

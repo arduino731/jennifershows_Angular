@@ -232,10 +232,6 @@ table{background:rgba(255,255,255,0.8);}
 	width:95%;
 }
 
-#prod-top.col-md-12{
-	margin-left:0px;
-	margin-bottom:0px;
-}
 
 .product_block {
     padding:0px 0px 0px 0px;
@@ -248,9 +244,6 @@ table{background:rgba(255,255,255,0.8);}
 }
 
 
-.prod-top-img {
-	background:rgba(255,255,255,1);
-}
 .tdRight a {
 	font-family: 'Open Sans', Sans-Serif;
     font-size:16px;

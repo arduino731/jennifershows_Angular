@@ -1,6 +1,6 @@
-﻿body {
-    min-height: 1000px; /* for bootstrap 3 fixed navbar fix */
-    padding: 0px 0px 0px 0px; /* for bootstrap 3 fixed navbar fix */  
+﻿/*body {
+    min-height: 1000px; 
+    padding: 0px 0px 0px 0px;  
     margin: 0px auto;
     -webkit-background-size: 100%; 
     -moz-background-size: 100%; 
@@ -10,21 +10,21 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+}*/
 
-html { 
+/*html { 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-	
+	*/
 
 
-a:hover {
+/*a:hover {
     color: #fff;
     text-decoration: none;
-}
+}*/
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0} 
 
 .autoResizeImage {
