@@ -38,10 +38,18 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 	  	controller: "contactController",
 	  	templateUrl: "app/views/pages/contact.html"
 	  })
-	  .when('/shop', {
-	  	controller: "shopController",
-	  	templateUrl: "app/views/pages/shop.html"
+	  .when('/store', {
+	  	controller: "storeController",
+	  	templateUrl: "app/views/pages/store.html"
 	  })
+	  .when('/products/:productSku', {
+	  	controller: "storeController",
+	  	templateUrl: "app/views/pages/product.html"
+	  })
+	  .when('/cart', {
+            templateUrl: 'app/views/pages/cart.html',
+            controller: 'storeController'
+      })
 	  .when('/funny', {
 	  	controller: "funnyController",
 	  	templateUrl: "app/views/pages/funny.html"

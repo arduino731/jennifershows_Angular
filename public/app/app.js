@@ -7,5 +7,7 @@ var app = angular.module('myApp', [
 	'ui.bootstrap',
 	'JennifershowsApp.services',
 	'Youtube',
-	'JenniferShows.controller'
+	'JenniferShows.controller',
+	'storeApp.config',
+	'JennifershowsApp.shippingCartDataService'
 	]);
