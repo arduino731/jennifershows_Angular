@@ -1,12 +1,13 @@
-<div id="idForJS" ng-controller="storeController" class ="container storeTopBackGround" >
-        <div class="well wellmt10" >
-            <a class="logo" href="{{INSIDE_HEADER_LINK}}">
-                <img src="{{INSIDE_HEADER_IMAGE}}" alt="logo" style="width:200px; height:50px;"/>
-            </a>
-            <h1 class="brand" style="padding-bottom:0px;">
-                <div ng-bind-html="INSIDE_HEADER_TITLE | unsafe" style="margin-top: -18px !important;"></div>
-            </h1>
-        </div>
+<div ng-controller="storeController" class ="container storeTopBackGround" >
+    <div class="well wellmt10">
+        <a class="logo" href="{{INSIDE_HEADER_LINK}}">
+            <img src="{{INSIDE_HEADER_IMAGE}}" alt="logo" style="width:200px; height:50px;"/>
+        </a>
+        <h1 class="brand" style="padding-bottom:0px;">
+            <div ng-bind-html="INSIDE_HEADER_TITLE | unsafe" style="margin-top: -18px !important;"></div>
+        </h1>
+        <h2 class="storeMobile">Store</h2>
+    </div>
         <!-- done above checked -->
 
 
@@ -51,9 +52,11 @@
 		                <button class="btn flr-top" ng-click="filterCategory('categoryname','cool')">Cool</button>
 		                <button class="btn flr-top flr-last" ng-click="filterCategory('categoryname','course')">Courses</button>
 		                <button class="btn flr-top flr-last" ng-click="filterCategory('categoryname','led')">Leds</button>
+		                <button class="btn flr-top flr-last" ng-click="filterCategory('categoryname','multipure')">Multipure</button>
 		            </div>
 		        </div>
 		        <div class="clear" style="height: 4px !important;"></div>
+<!-- untitled -->
 		        <div id="cbp-vm" class="cbp-vm-switcher" ng-class="{true: '', false: 'activegrid'}[isActive]">
 		            <ul id="product" class="nav-pills nav-stacked rectangle-list">
 		                <li ng-repeat="product in pagedItems[currentPage] | filter:query | orderBy:'sortorder'" class="store_pill ng-scope {{AN_STORE_PILL}}">
@@ -78,7 +81,7 @@
 		                            </span>
 		                        </div>
 		                        <div style="display:inline !important">
-		                            <a href="" ng-click="cart.addItem(product.sku, product.productname, product.unitprice, 1)">
+		                            <a href="" ng-click="cart.addItem(product.sku, product.productname, product.unitprice, 1, product.shipping)">
 		                                <div class="btn btn-x-blue">Add cart</div>
 		                            </a>
 		                            <a ng-href="/products/{{product.sku}}">
@@ -117,7 +120,7 @@
 		                </div>
 		            </div>
 		        </div>
+<!-- untitled -->
 			</form>
 		</div>
-
 </div>

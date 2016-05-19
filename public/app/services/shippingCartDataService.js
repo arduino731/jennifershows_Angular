@@ -45,8 +45,11 @@ angular.module('JennifershowsApp.shippingCartDataService', [])
     // PayPal. You can do that here:
     // https://www.paypal.com/webapps/mpp/merchant
     //myCart.addCheckoutParameters("PayPal", "paypaluser@youremail.com");
+    //Business FAKE 
     myCart.addCheckoutParameters("PayPal", "arduino731-facilitator@gmail.com");
-    // to test buyer arduino731-buyer@gmail.com;
+    //Personal FAKE
+    //arduino731-buyer@gmail.com
+    //Business LIVE
     // myCart.addCheckoutParameters("PayPal", CONFIG.CF_PAYMENT_PAYPAL_BUYNOW);
 
     // enable Google Wallet checkout

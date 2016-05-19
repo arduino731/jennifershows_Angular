@@ -31,8 +31,8 @@ shoppingCart.prototype.loadItems = function () {
             var items = JSON.parse(items);
             for (var i = 0; i < items.length; i++) {
                 var item = items[i];
-                if (item.sku != null && item.productname != null && item.unitprice != null && item.quantity != null) {
-                    item = new cartItem(item.sku, item.productname, item.unitprice, item.quantity);
+                if (item.sku != null && item.productname != null && item.unitprice != null && item.quantity != null && item.shipping != null) {
+                    item = new cartItem(item.sku, item.productname, item.unitprice, item.quantity, item.quantity);
                     this.items.push(item);
                 }
             }
@@ -51,9 +51,10 @@ shoppingCart.prototype.saveItems = function () {
 }
 
 // adds an item to the cart
-shoppingCart.prototype.addItem = function (sku, productname, unitprice, quantity) {
+shoppingCart.prototype.addItem = function (sku, productname, unitprice, quantity, shipping) {
     var quantity = this.toNumber(quantity);
     var unitprice = this.toNumber(unitprice);
+    var shipping = this.toNumber(shipping);
     if (unitprice > 0) {
 
         // update quantity for existing item
@@ -71,7 +72,7 @@ shoppingCart.prototype.addItem = function (sku, productname, unitprice, quantity
 
         // new item, add now
         if (!found) {
-            var item = new cartItem(sku, productname, unitprice, quantity);
+            var item = new cartItem(sku, productname, unitprice, quantity, shipping);
             this.items.push(item);
         }
 
@@ -222,11 +223,13 @@ shoppingCart.prototype.checkoutPayPal = function (parms, clearCart) {
         data["item_name_" + ctr] = z6;
         data["quantity_" + ctr] = item.quantity;
         data["amount_" + ctr] = item.unitprice.toFixed(2);
+        data["shipping_" + ctr] = item.shipping.toFixed(2);
     }
 
     // build form
     var form = $('<form/></form>');
     form.attr("action", "https://www.sandbox.paypal.com/cgi-bin/webscr");
+    // form.attr("action", "https://www.paypal.com/cgi-bin/webscr");
     form.attr("method", "POST");
     form.attr("style", "display:none;");
     this.addFormFields(form, data);
@@ -375,10 +378,11 @@ function checkoutParameters(serviceName, merchantID, options) {
 //----------------------------------------------------------------
 // items in the cart
 //
-function cartItem(sku, productname, unitprice, quantity) {
+function cartItem(sku, productname, unitprice, quantity, shipping) {
     this.sku = sku;
     this.productname = productname;
     this.unitprice = unitprice * 1;
     this.quantity = quantity * 1;
+    this.shipping = shipping * 1;
 }
 

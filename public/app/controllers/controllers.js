@@ -32,7 +32,7 @@ app.controller("indexController", function($scope, $location){
 
 });
 
-app.controller("storeController", function($scope, $filter, $routeParams, $location, DataService, $sce,  CONFIG){
+app.controller("storeController", function($scope, $filter, $routeParams, $location, DataService, $sce, CONFIG){
     $scope.dataLoaded = false;
 
     /*#####################
@@ -72,7 +72,7 @@ app.controller("storeController", function($scope, $filter, $routeParams, $locat
     $scope.groupedItems = [];
     $scope.pagedItems = [];
     $scope.currentPage = 1;
-    $scope.pageSize = 8;
+    $scope.pageSize = 4;
     $scope.products = [];
     $scope.slides = [];
     $scope.isActive = false;

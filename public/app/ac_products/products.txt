@@ -105,6 +105,7 @@
         "videoid": "",
         "showvideo": false,
         "unitprice": 0.01,
+        "shipping" : 0.01,
         "saleprice": 0,
         "unitsinstock": 22,
         "unitsonorder": 0,

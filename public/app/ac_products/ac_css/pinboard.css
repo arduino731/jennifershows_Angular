@@ -219,10 +219,6 @@ table{background:rgba(255,255,255,0.8);}
 	background:rgba(255,255,255,1);
 }
 
-.table {
-	margin-bottom:0px;
-	margin-left:15px;
-}
 
 .table-bordered thead:first-child tr:first-child > th:last-child, .table-bordered tbody:first-child tr:first-child > td:last-child, .table-bordered tbody:first-child tr:first-child > th:last-child {
 	border-radius:0px;
