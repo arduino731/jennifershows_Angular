@@ -30,11 +30,7 @@
 	border-bottom: 1px dotted #E3E3E3;
 }
 */
-#store.col-md-12{
-    float:none;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .flr-top-first {
 	 margin:10px 5px 0 30px;
 	 background-color: #F5F5F5;
@@ -81,11 +77,6 @@ button.flr-top {
     max-lines: 2 !important;
 }
 
-.content {
-    margin-bottom: 0px;
-    min-height: 20px;
-    padding: 0px;
-}
 .store-cart-content {
 	height:60px;
 	margin-left:0px;
@@ -94,14 +85,7 @@ button.flr-top {
 .filter-button-top {
 	float:left;
 }
-.content-store {
-    margin-bottom: 0px;
-    min-height: 20px;
-    padding: 19px;
-}
-.content-store.col-md-5 {
-	margin-left:10px;
-}
+
 .store-down-bottom {
 	margin: 10px 20px 0 0px; 
 	float:right; 
@@ -134,11 +118,6 @@ button.flr-top {
 }
 .btn-pag-next {
 	float:right;
-}
-.tabs-menu.col-md-5{
-    margin-left: 0px;
-    margin-right:20px;
-    float:right;
 }
 
 .btn-block, .btn-success, .btn-inverse, .btn-primary, .btn-danger {
@@ -212,8 +191,6 @@ table{background:rgba(255,255,255,0.8);}
 .input-append .btn.btn-inverse, .input-append .btn.btn-success {
 	padding: 4px 12px;
 }
-
-
 
 .content-backcolor {
 	background:rgba(255,255,255,1);
@@ -324,7 +301,6 @@ table tr:hover {
 }
 
 @media only screen and (max-width: 1200px) {   
-  .tabs-menu{display:none;}
 
   .activegrid ul.nav-pills li img{
         text-align:center;

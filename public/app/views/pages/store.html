@@ -58,6 +58,71 @@
 		        <div class="clear" style="height: 4px !important;"></div>
 <!-- untitled -->
 
+		        <div id="cbp-vm" class="cbp-vm-switcher" ng-class="{true: '', false: 'activegrid'}[isActive]">
+		            <ul id="product" class="nav-pills nav-stacked rectangle-list">
+		                <li ng-repeat="product in pagedItems[currentPage] | filter:query | orderBy:'sortorder'" class="store_pill ng-scope {{AN_STORE_PILL}}">
+
+		                    <div class="store_img_video {{AN_STORE_IMG_VIDEO}}">
+		                        <div ng-hide="product.showvideo > 0" ng-show="product.showvideo < 1">
+		                            <!--USE THIS TO POPUP MODAL DIALOG: <a href="#" ng-click="launchSimpleModal(product)"> -->
+		                            <a href="#/products/{{product.sku}}"><img src="../app/{{PRODUCTS_FOLDER}}/imgProducts/{{product.imagename}}" alt="{{product.productname}}" style="display: block;height: 100%;max-height:200px" /></a>
+		                        </div>
+		                        <div ng-show="product.showvideo > 0">
+		                            <div my-youtube code="product.videoid"></div>
+		                        </div>
+		                    </div>
+
+		                    <div class="store_block">
+		                        <div class="store_header">
+		                            <div ng-bind-html="product.header | unsafe"></div>
+		                        </div>
+		                        <div class="store_shortdesc" ng-bind-html="product.shortdesc | unsafe">
+		                            <span ng-show="product.link.length > 0">
+		                                <a href="{{product.link}}" target="_blank"><span class="btn btn-x-blue">{{product.linktext}}</span></a>
+		                            </span>
+		                        </div>
+		                        <div style="display:inline !important">
+		                            <a href="" ng-click="cart.addItem(product.sku, product.productname, product.unitprice, 1, product.shipping)">
+		                                <div class="btn btn-x-blue">Add cart</div>
+		                            </a>
+		                            <a ng-href="/products/{{product.sku}}">
+		                                <div class="btn btn-x-blue">Details</div>
+		                            </a>
+		                            <div class="categoryname" href="#" style="margin:2px 5% 0px 20px !important;float:right !important;">{{product.categoryname}}</div>
+
+		                            <div class="content_price" style="text-align:right !important;padding:0px 5% 0px 20px !important;float:none !important;">
+		                                {{product.unitprice | currency}}
+		                                <span ng-show="cart.getTotalCount(product.sku) > 0">
+		                                    <i class="fa fa-check-square-o"></i>{{cart.getTotalCount(product.sku)}}
+		                                </span>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </li>
+		            </ul>
+
+		            <div class="col-md-12 store_container store_footer">
+		                <div class="content-store col-md-5">
+		                    <a href="/cart" title="proceed to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+		                        <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
+		                        <div style="display:inline !important;">
+		                            <span class="btn btn-xs btn-split hvr-pulse">proceed to <img class="img-split" src="../app/ac_products/ac_img/cart.png" /></span>
+		                        </div>
+		                    </a>
+		                </div>
+		                <div class="col-md-5 store_bottom">
+		                    <table style="float:right;">
+		                        <tr>
+		                            <td><button class="btn" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1"><</button></td>
+		                            <td><p>&nbsp;&nbsp;{{currentPage + 1}}/{{pageCount()}}&nbsp;&nbsp;</p></td>
+		                            <td><button class="btn" ng-disabled="nextPage()" ng-click="currentPage=currentPage+1">></button></td>
+		                        </tr>
+		                    </table>
+		                </div>
+		            </div>
+		        </div>
+
+
 <!-- untitled -->
 			</form>
 		</div>
