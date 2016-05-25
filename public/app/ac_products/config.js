@@ -16,7 +16,7 @@ var config_module = angular.module('storeApp.config', [])
     'CF_NAVBAR_LOGO_LINK': '#/store',
     'CF_INSIDE_HEADER_SHOW': true,
     'CF_INSIDE_HEADER_LINK': '/store',
-    'CF_INSIDE_HEADER_IMAGE': 'assets/img/coming-soon.jpg',
+    'CF_INSIDE_HEADER_IMAGE': 'assets/img/js.png',
     'CF_INSIDE_HEADER_TITLE': 'Store',
     'CF_CAROUSEL_SHOW': false,
     'CF_CAROUSEL_AUTO_PLAY': true,

@@ -63,7 +63,7 @@ STORE HTML
 @media only screen and (min-width: 768px) {
 	.logo {
 		float:left;
-		margin: 20px auto 0px auto;
+		margin: -20px auto 0px auto;
 		display:block;
 	}
 	.wellmt10{

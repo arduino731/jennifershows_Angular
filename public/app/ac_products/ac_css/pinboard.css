@@ -42,10 +42,8 @@ button.flr-top {
 	 background-image: none;
 }
 
-/* BIG CONFLICT WITH CONTAINER !!! NEED TO RE-WRITE THIS !!! */
 .container li{
     font-size: 14px; 
-    background-color:rgba(255,255,255,1);
 }
 
 .nav-pills{margin-top:30px; margin-left:0;}

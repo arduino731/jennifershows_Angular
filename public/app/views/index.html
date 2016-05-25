@@ -75,12 +75,16 @@
                     </ul>
                 </div>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="/">Jennifer's Shows</a>
+                <a class="navbar-brand" href="/">
+                    <img src="assets/img/js.png" class="logoJS">
+                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
+                <a class="navbar-brand" ng-class="{ active:isActive('/')}" href="/">
+                    <img src="assets/img/js.png" class="logoJS"></a>
                 <ul class="nav navbar-nav">
-                    <li ng-class="{ active:isActive('/')}"><a href="/">Home</a></li>
+                    <!-- <li ng-class="{ active:isActive('/')}"><a href="/">Home</a></li> -->
                     <li ng-class="{ active:isActive('/store')}"><a href="/store">Store</a></li>
                     <li ng-class="{ active:isActive('/about')}"><a href="/about">About</a></li>
                     <li ng-class="{ active:isActive('/blog')}"><a href="/blog">Blog</a></li>
