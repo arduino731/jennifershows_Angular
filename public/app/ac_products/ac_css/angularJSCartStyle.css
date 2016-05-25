@@ -34,6 +34,13 @@
 .tabs-menu.col-md-5{
     float:right;
 }
+.table td.tdCenter {
+  text-align: center;
+}
+
+a.cart-txt-color{
+	text-decoration: none;
+}
 
 /**********************************
 STORE HTML 
@@ -72,7 +79,13 @@ STORE HTML
 	    border-radius: 10px;
 	    border: 2px solid black;
 	}
-
+	a:hover.cart-txt-store{
+		background:#336699;
+		text-decoration: none;
+	}
+	a:active.cart-txt-store{
+		background:#79241A;
+	}
 
 }
 
@@ -107,7 +120,7 @@ PRODUCT HTML
 @media only screen and (min-width: 1200px) {
 
 }
-/*END STORE */
+/*END PRODUCT */
 /**********************************
 CART HTML 
 ***********************************/

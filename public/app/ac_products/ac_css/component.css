@@ -24,6 +24,7 @@
 	border:0px;
 	cursor: pointer;
 	line-height: 18px;
+	list-style: none;
     }
 .container .cbp-vm-options li:first-child{
     padding: 0px 10px 0px 0px;

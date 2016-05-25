@@ -15,11 +15,11 @@
 			<form class="form-search">
 		        <div class="col-md-12 store_container">
 		            <div class="content-store col-md-5">
-		                <a href="/cart" title="proceed to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+		                <a href="/cart" class="cart-txt-store" title="proceed to shopping cart" ng-disabled="cart.getTotalCount() < 1">
 		                    <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
 		                    <div style="display:inline !important;">
-		                        <span class="btn btn-xs btn-split hvr-pulse">proceed to <img class="img-split" src="../app/ac_products/ac_img/cart.png" /></span>
-		                    </div>
+                                <span class="btn btn-xs btn-info">proceed to shopping cart</span>
+                            </div>
 		                </a>
 		            </div>
 
@@ -65,11 +65,12 @@
 		                    <div class="store_img_video {{AN_STORE_IMG_VIDEO}}">
 		                        <div ng-hide="product.showvideo > 0" ng-show="product.showvideo < 1">
 		                            <!--USE THIS TO POPUP MODAL DIALOG: <a href="#" ng-click="launchSimpleModal(product)"> -->
-		                            <a href="#/products/{{product.sku}}"><img src="../app/{{PRODUCTS_FOLDER}}/imgProducts/{{product.imagename}}" alt="{{product.productname}}" style="display: block;height: 100%;max-height:200px" /></a>
+		                            <a href="/products/{{product.sku}}"><img src="../app/{{PRODUCTS_FOLDER}}/imgProducts/{{product.imagename}}" alt="{{product.productname}}" style="display: block;height: 100%;max-height:200px" /></a>
 		                        </div>
 		                        <div ng-show="product.showvideo > 0">
 		                            <div my-youtube code="product.videoid"></div>
 		                        </div>
+		                        <div> {{product.linktext}}</div>
 		                    </div>
 
 		                    <div class="store_block">
@@ -103,14 +104,14 @@
 
 		            <div class="col-md-12 store_container store_footer">
 		                <div class="content-store col-md-5">
-		                    <a href="/cart" title="proceed to shopping cart" ng-disabled="cart.getTotalCount() < 1">
-		                        <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
-		                        <div style="display:inline !important;">
-		                            <span class="btn btn-xs btn-split hvr-pulse">proceed to <img class="img-split" src="../app/ac_products/ac_img/cart.png" /></span>
-		                        </div>
-		                    </a>
+		                    <a href="/cart" class="cart-txt-store" title="proceed to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+			                    <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
+			                    <div style="display:inline !important;">
+	                                <span class="btn btn-xs btn-info">proceed to shopping cart</span>
+	                            </div>
+		                	</a>
 		                </div>
-		                <div class="col-md-5 store_bottom">
+		                <div class="col-md-5 store_bottom" style="margin-top: 25px;">
 		                    <table style="float:right;">
 		                        <tr>
 		                            <td><button class="btn" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1"><</button></td>

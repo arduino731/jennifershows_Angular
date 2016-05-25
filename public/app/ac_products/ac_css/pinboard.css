@@ -44,11 +44,7 @@ button.flr-top {
 
 /* BIG CONFLICT WITH CONTAINER !!! NEED TO RE-WRITE THIS !!! */
 .container li{
-    border-bottom: 1px solid #eee; 
     font-size: 14px; 
-    list-style: none; 
-    padding: 30px 0 20px 30px; 
-    position: relative; 
     background-color:rgba(255,255,255,1);
 }
 
@@ -230,10 +226,6 @@ table{background:rgba(255,255,255,0.8);}
 
 .table td.tdRight:first-child{
   padding:0px;
-}
-
-.table td.tdCenter {
-  text-align: center;
 }
 
 .table-nonfluid {
