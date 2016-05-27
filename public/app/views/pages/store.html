@@ -34,7 +34,7 @@
 		            </div>
 		        </div>
 		        <div class="col-md-12 store_button_top">
-		            <table style="float:right;">
+		            <table class="currentPage">
 		                <tr>
 		                    <td><button class="btn" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1"><</button></td>
 		                    <td><p>&nbsp;&nbsp;{{currentPage + 1}}/{{pageCount()}}&nbsp;&nbsp;</p></td>
@@ -43,7 +43,7 @@
 		            </table>
 
 
-		            <div style="width: 300px !important;padding-bottom: 12px !important;">
+		            <div style="width: 300px;padding-top: 15px; margin:auto; float:left;">
 		                <input type="text" ng-model="query" ng-change="search('productname')" class="searchbox" placeholder="Search">
 		            </div>
 		            <div class="filter-button-top">

@@ -41,7 +41,6 @@
 a.cart-txt-color{
 	text-decoration: none;
 }
-
 /**********************************
 STORE HTML 
 ***********************************/
@@ -56,6 +55,19 @@ STORE HTML
 	}
 	.content-store.col-md-5 {
     	margin: 25px 0px;
+	}
+	table.currentPage{
+		float:right; 
+		margin: 15px -30px 0px 0px;
+	}
+	.store_button_top{
+		height:215px;
+		border-radius: 5px;
+	}
+}
+@media (min-width: 570px){
+	.store_button_top{
+		height:140px;
 	}
 }
 
@@ -86,12 +98,19 @@ STORE HTML
 	a:active.cart-txt-store{
 		background:#79241A;
 	}
-
+	table.currentPage{
+		margin: 15px -90px 0px 0px;
+	}
+	.store_button_top{
+		height:100px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-
+	table.currentPage{
+		margin: 15px 30px 0px 0px;
+	}	
 }
 
 /* Large devices (large desktops, 1200px and up) */
