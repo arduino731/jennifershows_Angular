@@ -46,11 +46,11 @@ angular.module('JennifershowsApp.shippingCartDataService', [])
     // https://www.paypal.com/webapps/mpp/merchant
     //myCart.addCheckoutParameters("PayPal", "paypaluser@youremail.com");
     //Business FAKE 
-    myCart.addCheckoutParameters("PayPal", "arduino731-facilitator@gmail.com");
+    // myCart.addCheckoutParameters("PayPal", "arduino731-facilitator@gmail.com");
     //Personal FAKE
     //arduino731-buyer@gmail.com
     //Business LIVE
-    // myCart.addCheckoutParameters("PayPal", CONFIG.CF_PAYMENT_PAYPAL_BUYNOW);
+    myCart.addCheckoutParameters("PayPal", CONFIG.CF_PAYMENT_PAYPAL_BUYNOW);
 
     // enable Google Wallet checkout
     // note: the second parameter identifies the merchant; in order to use the 
