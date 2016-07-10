@@ -5,9 +5,10 @@
             <div class="product_block">
 
                 <div ng-show="product.showvideo < 1">
-                    <img ng-src="../app/ac_products/imgProducts/{{product.imagename}}" alt="{{product.productname}}" style="padding-right:20px !important;" /><br />
+                    <img ng-src="../app/ac_products/imgProducts/{{product.imagename}}" alt="{{product.productname}}" style="padding-right:20px !important; width:500px; height:300px; margin-top:20px;" /><br />
 
-                    <div my-youtube code="product.videoid" style="float:left; padding:30px 70px; height:0px;"></div>
+                    <div ng-show="product.videoid" my-youtube code="product.videoid" style="float:left; padding:30px 70px; height:0px;"></div>
+
                     <div ng-show="product.link">
                         <a href="{{product.link}}" target="_blank" alt="{{product.productname}}">Open the link</a>
                     </div>

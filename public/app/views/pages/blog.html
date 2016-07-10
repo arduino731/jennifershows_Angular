@@ -5,28 +5,6 @@
         <div class="box">
           <div class="col-sm-8 blog-main">
             <div class="row">
-              <div class="col-xs-12">
-                  <h3>Blogs Page: {{ currentPage }}</h3>
-              </div>
-              <div class="col-xs-12">
-                  <label for="search">Search:</label>
-                  <input ng-model="q" id="search" class="form-control" placeholder="Filter text">
-              </div>
-              <div class="col-xs-12">
-                  <label for="search">items per page:</label>
-                  <input type="number" min="1" max="100" class="form-control" ng-model="pageSize">
-              </div>
-              
-              <nav>
-                <div ng-controller="OtherController" class="other-controller">
-                      <div class="text-center">
-                      <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="dirPagination.tpl.html"></dir-pagination-controls>
-                      </div>
-                </div>
-              </nav>
-            </div>
-          
-            <div class="row">
               <div class="panel panel-primary" style="    margin-top: 15px;">
                 <div class="panel-body">
                   <div dir-paginate="blog in blogs | filter:q | itemsPerPage: pageSize" current-page="currentPage">
@@ -59,12 +37,21 @@
             </nav>
           </div><!-- col-sm-8 /.blog-main -->
 
-          <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-            <div class="sidebar-module sidebar-module-inset">
-                <h4>About</h4>
-                <p>The best trending stories every day. Get your daily-dose of the things you love to see online, and share funny, inspirational, beautiful and intriguing stories with your friends.</p>
+          <div class="col-sm-4 blog-sidebar">
+            <div class="col-xs-12">
+              <h3 class="text-center">Blogs Page: {{ currentPage }}</h3>
+            </div>
+            <div class="col-xs-12">
+                <label for="search">Search:</label>
+                <input ng-model="q" id="search" class="form-control" placeholder="Filter text">
+            </div>
+            <div class="col-xs-12">
+                <label for="search">Items Per Page:</label>
+                <input type="number" min="1" max="10" class="form-control" ng-model="pageSize">
             </div>
             <div class="sidebar-module">
+              <h4>About</h4>
+              <p>The best trending stories every day. Get your daily-dose of the things you love to see online, and share funny, inspirational, beautiful and intriguing stories with your friends.</p>
               <h4>Archives</h4>
               <ol class="list-unstyled">
                 <li><a href="/blog/karatbars">Karatbars</a></li>

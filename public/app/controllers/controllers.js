@@ -72,7 +72,7 @@ app.controller("storeController", function($scope, $filter, $routeParams, $locat
     $scope.groupedItems = [];
     $scope.pagedItems = [];
     $scope.currentPage = 1;
-    $scope.pageSize = 4;
+    $scope.pageSize = 6;
     $scope.products = [];
     $scope.slides = [];
     $scope.isActive = false;

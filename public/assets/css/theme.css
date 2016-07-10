@@ -220,10 +220,12 @@ footer p {
     margin-top:-15px;
 }
 
-.portfolio-item .portfolio-link .portfolio-hover:hover {
+.portfolio-item .portfolio-link .portfolio-hover:hover  {
     opacity: .8;
 }
-
+.portfolio-item .portfolio-link .portfolio-hover:active  {
+    opacity: .8;
+}
 .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     position: absolute;
     top: 50%;
