@@ -4,7 +4,7 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
   $routeProvider
   	  .when('/', {
 	  	controller: "indexController",
-	  	templateUrl: "app/views/pages/index.html"
+	  	templateUrl: "app/views/pages/index2.html"
 	  })
 	  .when('/recipes', {
 	  	controller: "recipesController",
