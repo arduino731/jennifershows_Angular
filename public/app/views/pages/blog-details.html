@@ -11,6 +11,21 @@
 				</div>
 
 				<div ng-show="blog.link"><a href="{{blog.link}}" target="_blank" style="margin-top:15px; display:block"> <i class="fa fa-external-link" aria-hidden="true"></i> Check it out Website! </a> </div>
+
+				<div ng-show="blog.productsImages"> 
+					<a href="{{blog.productsLink[0]}}" target="_blank" style="margin-top:15px; display:block" > 
+						<i class="fa fa-external-link" aria-hidden="true"></i> Check it out Website! 
+						<p>{{blog.productsDescription[0]}} </p></a>
+						<img ng-src="assets/img/productsImages/{{blog.productsImages[0]}}" class="img-responsive" style="margin-top:15px;">
+					<a href="{{blog.productsLink[1]}}" target="_blank" style="margin-top:15px; display:block" > 
+						<i class="fa fa-external-link" aria-hidden="true"></i> Check it out Website! 
+						<p>{{blog.productsDescription[1]}} </p></a>
+						<img ng-src="assets/img/productsImages/{{blog.productsImages[1]}}" class="img-responsive" style="margin-top:15px;">
+					<a href="{{blog.productsLink[2]}}" target="_blank" style="margin-top:15px; display:block" > 
+						<i class="fa fa-external-link" aria-hidden="true"></i> Check it out Website! 
+						<p>{{blog.productsDescription[2]}} </p></a>
+						<img ng-src="assets/img/productsImages/{{blog.productsImages[2]}}" class="img-responsive" style="margin-top:15px;">
+				</div>
 			</div>
 
             <div class="col-sm-3 col-sm-offset-1 blog-sidebar">

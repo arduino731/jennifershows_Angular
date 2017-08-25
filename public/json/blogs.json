@@ -1,5 +1,33 @@
 [ 
 	{
+		"id": 19,
+		"posted": "8/24/2017",
+		"title": "Healthy beverage",
+		"description": "What is the best way to drink", 
+		"youtube": "_XmcRF9nPTE",
+		"name": "Jennifer Alvarado",
+		"images": [
+			{ 
+				"name": "Healthy-beverage.jpg"
+			} 
+		],
+		"productsImages": [
+			"HandHeldLemonSqueezer.jpg",
+			"zevia_29-6pk-ginger-ale_0266.jpeg",
+			"lemon-1117568_960_720.jpg"	
+		],
+		"productsDescription": [
+			"Hand Held Lemon Squeezer",
+			"Zevia Ginger Ale",
+			"Pure Lemon"
+		],
+		"productsLink" : [
+			"https://www.amazon.com/dp/B01MUZHJVR/ref=asc_df_B01MUZHJVR5137804/?tag=hyprod-20&creative=395033&creativeASIN=B01MUZHJVR&linkCode=df0&hvadid=216493578477&hvpos=1o3&hvnetw=g&hvrand=16306887895584528337&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9028097&hvtargid=pla-349846589961",
+			"https://www.walmart.com/ip/Zevia-Ginger-Ale-6-count-Pack-of-4/21091612",
+			"https://www.amazon.com/Organic-Lemons-10-12-Lb-Case/dp/B004W4X3P4"
+		]
+	},
+	{
 		"id": 18,
 		"posted": "11/10/2016",
 		"title": "ASL~ Marathon December 4, 2016 at 7:30 am",
