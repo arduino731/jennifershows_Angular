@@ -49,3 +49,6 @@ app.get('/*', function(req, res) {
 http.listen(process.env.PORT || 3000, function(){
   console.log('listening on', http.address().port);
 });
+
+// app.listen(config.port);
+// console.log('Magic happens on port ' + config.port);
