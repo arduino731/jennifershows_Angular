@@ -1,30 +1,30 @@
 <div class="container">
-<div ng-controller="blogDetailsCtrl">
+<div ng-controller="vlogDetailsCtrl">
     <div class="row">
         <div class="box">
             <div class="col-sm-8 blog-main text-center">
-                <h2 class="blog-post-title">{{blog.title}}</h2><!-- add href as blog/blog.id?? -->
-                <p class="blog-post-meta">{{blog.posted}} by {{blog.name}}</p>
-                <p>{{blog.description}}</p>
+                <h2 class="blog-post-title">{{vlog.title}}</h2><!-- add href as blog/blog.id?? -->
+                <p class="blog-post-meta">{{vlog.posted}} by {{vlog.name}}</p>
+                <p>{{vlog.description}}</p>
                 <div class="embed-responsive embed-responsive-16by9">
 					<div my-youtube code="code"></div>
 				</div>
 
-				<div ng-show="blog.link"><a href="{{blog.link}}" target="_blank" style="margin-top:15px; display:block"> <i class="fa fa-external-link" aria-hidden="true"></i> Check it out Website! </a> </div>
+				<div ng-show="vlog.link"><a href="{{vlog.link}}" target="_blank" style="margin-top:15px; display:block"> <i class="fa fa-external-link" aria-hidden="true"></i> Check it out Website! </a> </div>
 
-				<div ng-show="blog.productsImages"> 
-					<a href="{{blog.productsLink[0]}}" target="_blank" style="margin-top:15px; display:block" > 
+				<div ng-show="vlog.productsImages"> 
+					<a href="{{vlog.productsLink[0]}}" target="_blank" style="margin-top:15px; display:block" > 
 						<i class="fa fa-external-link" aria-hidden="true"></i> Check it out Website! 
-						<p>{{blog.productsDescription[0]}} </p></a>
-						<img ng-src="assets/img/productsImages/{{blog.productsImages[0]}}" class="img-responsive" style="margin-top:15px;">
-					<a href="{{blog.productsLink[1]}}" target="_blank" style="margin-top:15px; display:block" > 
+						<p>{{vlog.productsDescription[0]}} </p></a>
+						<img ng-src="assets/img/productsImages/{{vlog.productsImages[0]}}" class="img-responsive" style="margin-top:15px;">
+					<a href="{{vlog.productsLink[1]}}" target="_blank" style="margin-top:15px; display:block" > 
 						<i class="fa fa-external-link" aria-hidden="true"></i> Check it out Website! 
-						<p>{{blog.productsDescription[1]}} </p></a>
-						<img ng-src="assets/img/productsImages/{{blog.productsImages[1]}}" class="img-responsive" style="margin-top:15px;">
-					<a href="{{blog.productsLink[2]}}" target="_blank" style="margin-top:15px; display:block" > 
+						<p>{{vlog.productsDescription[1]}} </p></a>
+						<img ng-src="assets/img/productsImages/{{vlog.productsImages[1]}}" class="img-responsive" style="margin-top:15px;">
+					<a href="{{vlog.productsLink[2]}}" target="_blank" style="margin-top:15px; display:block" > 
 						<i class="fa fa-external-link" aria-hidden="true"></i> Check it out Website! 
-						<p>{{blog.productsDescription[2]}} </p></a>
-						<img ng-src="assets/img/productsImages/{{blog.productsImages[2]}}" class="img-responsive" style="margin-top:15px;">
+						<p>{{vlog.productsDescription[2]}} </p></a>
+						<img ng-src="assets/img/productsImages/{{vlog.productsImages[2]}}" class="img-responsive" style="margin-top:15px;">
 				</div>
 			</div>
 
