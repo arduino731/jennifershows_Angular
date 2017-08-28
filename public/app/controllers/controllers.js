@@ -323,7 +323,7 @@ app.controller('vlogDetailsCtrl',  ['$scope', '$routeParams', '$http', '$filter'
 				return d.id == vlogId;
 			})[0];
 			// $scope.mainImage = $scope.blog.images[0].name;
-			$scope.code = $scope.blog.youtube;
+			$scope.code = $scope.vlog.youtube;
 			console.log($scope.code);
 	});
 
