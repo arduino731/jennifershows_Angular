@@ -46,9 +46,9 @@ app.get('/*', function(req, res) {
 
 // START THE SERVER
 // ====================================
+// app.listen(config.port);
+// console.log('Magic happens on port localhost:' + config.port);
+
 http.listen(process.env.PORT || 3000, function(){
   console.log('listening on', http.address().port);
 });
-
-// app.listen(config.port);
-// console.log('Magic happens on port ' + config.port);
