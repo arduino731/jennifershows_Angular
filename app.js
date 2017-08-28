@@ -4,7 +4,7 @@ var http = require('http').Server(app);
 // var bodyParser = require('body-parser'); 	// get body-parser
 // var morgan     = require('morgan'); 		// used to see requests
 // var mongoose   = require('mongoose');
-var config 	   = require('./config');
+// var config 	   = require('./config');
 var path 	   = require('path');
 
 // APP CONFIGURATION ==================
