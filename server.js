@@ -1,5 +1,6 @@
 var express    = require('express');		// call express
 var app        = express(); 				// define our app using express
+var http = require('http').Server(app);
 // var bodyParser = require('body-parser'); 	// get body-parser
 // var morgan     = require('morgan'); 		// used to see requests
 // var mongoose   = require('mongoose');
@@ -45,5 +46,6 @@ app.get('/*', function(req, res) {
 
 // START THE SERVER
 // ====================================
-app.listen(config.port);
-console.log('Magic happens on port ' + config.port);
+http.listen(process.env.PORT || 3000, function(){
+  console.log('listening on', http.address().port);
+});
