@@ -300,11 +300,11 @@ app.controller("aboutController", function($scope){
 	
 });
 
-app.controller("blogController", ['$scope', '$http', '$log', function($scope, $http, $log){
-	$scope.blogs = []; // declare an empty array 
+app.controller("vlogController", ['$scope', '$http', '$log', function($scope, $http, $log){
+	$scope.vlogs = []; // declare an empty array 
 
-		$http.get('json/blogs.json').success(function(data){
-			$scope.blogs = data;
+		$http.get('json/vlogs.json').success(function(data){
+			$scope.vlogs = data;
 		  	$scope.currentPage = 1;
 			$scope.pageSize = 4; // 10
 			// console.log(data);
@@ -315,12 +315,12 @@ app.controller("blogController", ['$scope', '$http', '$log', function($scope, $h
 	};
 }]);
 
-app.controller('blogDetailsCtrl',  ['$scope', '$routeParams', '$http', '$filter', function($scope, $routeParams, $http, $filter){
-	var blogId = $routeParams.blogId;
-	$scope.blog = []; //declare an empty array
-	$http.get('json/blogs.json').success(function(data){
-			$scope.blog = $filter('filter')(data, function(d){
-				return d.id == blogId;
+app.controller('vlogDetailsCtrl',  ['$scope', '$routeParams', '$http', '$filter', function($scope, $routeParams, $http, $filter){
+	var vlogId = $routeParams.vlogId;
+	$scope.vlog = []; //declare an empty array
+	$http.get('json/vlogs.json').success(function(data){
+			$scope.vlog = $filter('filter')(data, function(d){
+				return d.id == vlogId;
 			})[0];
 			// $scope.mainImage = $scope.blog.images[0].name;
 			$scope.code = $scope.blog.youtube;

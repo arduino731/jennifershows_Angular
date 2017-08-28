@@ -18,11 +18,11 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 	  	controller: "aboutController",
 	  	templateUrl: "app/views/pages/about.html"
 	  })
-	  .when('/blog', {
-	  	controller: "blogController",
-	  	templateUrl: "app/views/pages/blog.html"
+	  .when('/vlogs', {
+	  	controller: "vlogController",
+	  	templateUrl: "app/views/pages/vlogs.html"
 	  })
-	  .when('/blog/karatbars', {
+	  .when('/karatbars', {
 	  	// controller: "karatbarsController",
 	  	templateUrl: "app/views/pages/karatbars.html"
 	  })
@@ -30,9 +30,9 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 	  //	controller: "blogMonthController",
 	  //	templateUrl: "app/views/pages/2014/March/test.html"
 	  //})
-	  .when('/blog/:blogId', {
-	  	controller: "blogDetailsCtrl",
-	  	templateUrl: "app/views/pages/blog-details.html"
+	  .when('/vlogs/:vlogId', {
+	  	controller: "vlogDetailsCtrl",
+	  	templateUrl: "app/views/pages/vlog-details.html"
 	  })
 	  .when('/contact', {
 	  	controller: "contactController",

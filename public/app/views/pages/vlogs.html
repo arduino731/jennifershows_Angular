@@ -1,25 +1,25 @@
 <div class="container">
-<div ng-controller="blogController">
-  <div class="brand">Jennifer's Shows</div>
+<div ng-controller="vlogController">
+  <div class="brand">Vlogs</div>
     <div class="row">
         <div class="box">
           <div class="col-sm-8 blog-main">
             <div class="row">
               <div class="panel panel-primary" style="    margin-top: 15px;">
                 <div class="panel-body">
-                  <div dir-paginate="blog in blogs | filter:q | itemsPerPage: pageSize" current-page="currentPage">
+                  <div dir-paginate="vlog in vlogs | filter:q | itemsPerPage: pageSize" current-page="currentPage">
                       <div class="col-md-6 col-sm-6 portfolio-item">
-                          <a href="/blog/{{blog.id}}" class="portfolio-link" >
+                          <a href="/vlogs/{{vlog.id}}" class="portfolio-link" >
                               <div class="portfolio-hover" style="background: #b31217;">
                                   <div class="portfolio-hover-content">
                                       <i class="fa fa-youtube fa-3x"></i>
                                   </div>
                               </div>
                               <div class="portfolio-caption">
-                                <h2 class="text-center">{{blog.title}}</h2>
-                                <p class="text-center">Posted: {{blog.posted}} </p>
-                                <img ng-src="assets/img/blogs/{{blog.images[0].name}}" class="img-responsive" alt="{{blog.name}}">
-                                <p class="text-muted" style="margin-top: 30px;">{{blog.description}}</p>
+                                <h2 class="text-center">{{vlog.title}}</h2>
+                                <p class="text-center">Posted: {{vlog.posted}} </p>
+                                <img ng-src="assets/img/blogs/{{vlog.images[0].name}}" class="img-responsive" alt="{{vlog.name}}">
+                                <p class="text-muted" style="margin-top: 30px;">{{vlog.description}}</p>
                               </div>
                           </a>
                       </div>
@@ -39,7 +39,7 @@
 
           <div class="col-sm-4 blog-sidebar">
             <div class="col-xs-12">
-              <h3 class="text-center">Blogs Page: {{ currentPage }}</h3>
+              <h3 class="text-center">Vlogs Page: {{ currentPage }}</h3>
             </div>
             <div class="col-xs-12">
                 <label for="search">Search:</label>
