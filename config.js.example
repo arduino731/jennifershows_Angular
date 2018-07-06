@@ -1,0 +1,5 @@
+module.exports = {	
+	'port': process.env.PORT || 3000,	
+	'database': 'mongodb://<dbuser>:<dbpassword>@ds041556.mlab.com:41556/<dbname>',	
+	'secret': '<text>'	
+}

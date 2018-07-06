@@ -1,4 +1,11 @@
+# Dependency directories
 node_modules/
-env
+
+# Logs
+npm-debug.log*
+
+# dotenv environment variables file
+.env
+
 config.js
 note.txt

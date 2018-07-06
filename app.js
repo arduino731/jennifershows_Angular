@@ -4,7 +4,7 @@ var http = require('http').Server(app);
 // var bodyParser = require('body-parser'); 	// get body-parser
 // var morgan     = require('morgan'); 		// used to see requests
 // var mongoose   = require('mongoose');
-// var config 	   = require('./config'); // unless you really need it otherwise heroku wont work!!! 
+// var config 	   = require('./config'); 
 var path 	   = require('path');
 
 // APP CONFIGURATION ==================
